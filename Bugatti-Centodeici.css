@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&family=Stylish&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  color: var(--body-color);
+  background-color: var(--background-color);
+  transition: color 0.25s, background-color 0.25s;
+  /* background:linear-gradient(#313131,#808080,#151515) ; */
+}
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    /* End general styles */
+    .primary-header {
+        position: fixed;
+        top: 0%;
+        left: 0;
+        z-index: 999;
+        width: 100%;
+        transition: background-color 0.5s;
+        color: #fff;
+        
+      }
+    .container {
+        max-width: 120rem;
+        margin-inline: auto;
+        padding-inline: 10.5rem;
+    }
+    .navbar {
+        height: 7.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid 
+            rgba(255, 255, 255, 0.05);
+        transition: height 0.25s;
+    }
+    .navbar a{
+        color: #fff;
+        font-size: 24px;
+    }
+    .navbar ul li a{
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .navbar .button{
+        color: #151515;
+        font-size: 16px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .logo {
+        font-size: 2.7rem;
+        font-weight: 900;
+        /* color: #fff; */
+    }
+
+    .nav-list {
+        list-style: none;
+        display: flex;
+        gap: 2.5rem;
+        margin-left: 5rem;
+        margin-right: auto;
+    }
+    .nav-link {
+        transition: color 0.25s;
+    }
+    .nav-list.nav-link a{
+        color: #fff;
+    }
+    .nav-link:hover {
+        color: #d3d3d3;
+    }
+    .button {
+        display: inline-block;
+        background-color: #fff;
+        color: #313131;
+        padding: 0.8rem 2rem;
+        border-radius: 2rem;
+        transition: background-color 0.25s;
+    }
+    .button:hover {
+        background-color: #d3d3d3;
+    }
+    header.active {
+        background-color: #fff;
+        box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+    }
+    header.active .navbar {
+        height: 6rem;
+    }
+    header.active .logo,
+    header.active .nav-link {
+        color: #313131;
+    }
+    header.active .nav-link:hover {
+        color: #808080;
+    }
+    header.active .button {
+        background-color: #313131;
+        color: #fff;
+    }
+    header.active .button:hover {
+        background-color: #151515;
+    }
+      
+    /* PARALLAL X CSS START HERE */
+/* SWITCH button  */
+#checkbox {
+	display: none;
+}
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 31px;
+	border: 2px solid #0a0a0a;
+	border-radius: 30px;
+	cursor: pointer;
+  background-color: transparent;
+}
+.switch > * {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+  color: white;
+}
+.switch__ball {
+	left: 1px;
+	z-index: 10;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-color: #0d0d0d;
+	border-radius: 50%;
+	transition: transform 0.5s cubic-bezier(0.52, -0.4, 0.27, 1.55);
+}
+.switch__sun {
+	left: 5px;
+}
+.switch__moon {
+	right: 5px;
+}
+#checkbox:checked + .switch__ball {
+	transform: translate(29px, -50%);
+}
+    .parallax {
+      margin: 0;
+      padding: 0;
+      background-image: url("./images/divo\ carousel.png");
+      width: 100%;
+      min-height: 100vh; 
+      background-attachment: fixed;
+      background-position:center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.85;
+    }
+    .parallax h1{
+      margin-left:10%;
+      font-weight: bold;
+      /* font: 900 48px ; */
+      font: 900 4rem/1.8 "Lato", sans-serif;
+      color: #808080;
+    }
+    .parallax p{
+      margin-bottom: 50px ;
+      margin-left: 10%;
+      font: 900 20px/1.8 "Lato", sans-serif;
+      color: #808080;
+    }
+    .parallax button{
+      margin-left: 10%;
+      height: 50px;
+      width: 200px;
+      font: 900 16px/1.8 "Lato", sans-serif;
+      color: white;
+      border: 1px solid #fff;
+      background-color: transparent;
+    }
+    .parallax button:hover{
+      background-color: rgba(255, 255, 255, 0.699);
+      color: rgb(43, 43, 43);
+      transition-duration:0.8s;
+    }
+    .paraContent{
+      text-align: center;
+      font-weight: bold;
+    }
+    .paraContent h1{
+      font-weight: bold;
+      font: 900 48px/1.8 "Lato", sans-serif;
+    }
+    .paraContent p{
+      font: 200 20px/1.8 "Lato", sans-serif;
+
+    }
+    
+    .parallas {
+      background-image: url("./images/divo\ interer.jpg");
+      min-height: 80vh;   
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover ;
+      /* opacity: 0.70; */
+    }
+    .parallas video{
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.70;
+    }
+
+   
+    /* PARALLAL X CSS ENDS HERE */
+
+    /* BACKGROUND VIDEO CSS */
+    .background video{
+      /* position: absolute; */
+      min-height: 80vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size:cover cover;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    }
+
+    .background p{
+      text-align: center;
+      font-size: 48px;
+      font-weight:bold;
+      font-family: "Lato", sans-serif;
+    }
+
+    /* BACKGROUND VIDEO CSS */
+
+
+    /* ANIMATION CARD */
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+    /* * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    
+    body {
+      background: #457fb4;
+      font-family: "Roboto", sans-serif;
+      display: flex;
+      height: 100vh;
+    } */
+    
+    .hero-container {
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      position: relative ;
+      size: cover;
+      
+    }
+    
+    .main-container {
+      width: 270px;
+      height: 540px;
+      position: relative;
+      margin: 0 20px;
+    }
+    
+    .poster-container {
+      width: 230px;
+      position: absolute;
+      top: 0;
+      left: 20px;
+      z-index: 9999;
+    }
+    .poster-container img{
+      width: 100%;
+      height: 360px;
+    }
+    .poster {
+      width: 100%;
+      box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+    }
+    
+    .ticket-container {
+      background: #fff;
+      width: 270px;
+      height: 520px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 5px;
+      position: absolute;
+      top: 20px;
+      box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+      opacity: 0;
+    }
+    
+    .main-container:hover .ticket-container {
+      opacity: 1;
+      animation: bounceIn 0.6s linear;
+    }
+    
+    @keyframes bounceIn {
+      0%,
+      20%,
+      40%,
+      60%,
+      80%,
+      to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+      0% {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+      }
+      20% {
+        -webkit-transform: scale3d(1.03, 1.03, 1.03);
+        transform: scale3d(1.03, 1.03, 1.03);
+      }
+      40% {
+        -webkit-transform: scale3d(0.9, 0.9, 0.9);
+        transform: scale3d(0.9, 0.9, 0.9);
+      }
+      60% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.01, 1.01, 1.01);
+        transform: scale3d(1.01, 1.01, 1.01);
+      }
+      80% {
+        -webkit-transform: scale3d(0.97, 0.97, 0.97);
+        transform: scale3d(0.97, 0.97, 0.97);
+      }
+      to {
+        opacity: 1;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+      }
+    }
+    
+    /* @keyframes bounce {
+      50% {
+        opacity: 1;
+        transform: scale(1.1);
+      }
+    
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    } */
+    
+    .ticket__content {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      /* position: fixed; */
+
+    }
+    
+    .ticket__movie-title {
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+    
+    .ticket__movie-slogan {
+      color: #999;
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+    }
+    
+    .ticket__current-price {
+      color: #69c982;
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+    
+    .ticket__old-price {
+      color: #999;
+      text-decoration: line-through;
+      margin-bottom: 10px;
+    }
+    
+    .ticket__buy-btn {
+      cursor: pointer;
+      width: 100%;
+      background: #2f2f2f;
+      color: white;
+      padding: 15px 0;
+      font-size: 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      border: 0;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+    /* ANIMATION CARD */
