@@ -174,10 +174,6 @@ header button {
 
 .header {
   margin: 0;
-  font-family: Montserrat;
-  font-size: 46px;
-  color: var(--white);
-  letter-spacing: 0.2em;
   background-image: linear-gradient(rgba(4, 9, 10, 0.6), rgba(4, 9, 30, 0.3)),
     url(./images/bugatti\ top.webp);
   display: flex;
@@ -185,11 +181,18 @@ header button {
   align-items: center;
   height: 100vh;
   width: 100%;
-  min-height: 400px;
+  min-height: 300px;
   background-size: cover;
   background-position: center;
 }
+.header > div{
+  min-height: 300px;
+  font-family: Montserrat;
+  font-size: 5.5vw;
+  color: var(--white);
+  letter-spacing: 0.2em;
 
+}
 div > span {
   opacity: 0.15;
 }
