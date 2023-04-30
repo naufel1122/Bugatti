@@ -47,6 +47,7 @@ a {
   width: 100%;
   transition: background-color 0.5s;
   color: #fff;
+
 }
 .register {
   max-width: 120rem;
@@ -198,6 +199,7 @@ header button {
   width: 100%;
   min-height: 400px;
   background-size: cover;
+  background-position: center;
 }
 
 div > span {

@@ -27,7 +27,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent"><br><br>
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-list">
                     <li>
-                        <a href="index.html" class="nav-link">Models</a>
+                        <a href="index.html" class="nav-link">Main</a>
+                    </li>
+					<li>
+                        <a href="#" class="nav-link">Models</a>
                     </li>
                     <li>
                         <a href="#" class="nav-link">Brand</a>
@@ -43,21 +46,25 @@
                     </li>
                 </ul><br>
                 <!-- <a href="#" class="button switch">Book now</a> -->
-            	<!-- <label role="button" for="checkbox" >
-					<input type="checkbox" id="checkbox" />
-					<span class="switch__ball"></span>
-					<i class="ri-sun-line switch__sun"></i>
-					<i class="ri-moon-line switch__moon"></i>
-				</label> -->
+            	
 				  
-  <label role="button" for="checkbox" class="switch">
+  <!-- <label role="button" for="checkbox" class="switch">
     <input type="checkbox" id="checkbox" />
     <span class="switch__ball"></span>
   <button class="switch">
       <i class="ri-sun-line switch__sun"></i>
 			<i class="ri-moon-line switch__moon"></i>
 		</label>
-    </button>
+    </button> -->
+	<button class="switch">
+		<!-- <label role="button" for="checkbox" >
+			<input type="checkbox" id="checkbox" />
+			<span class="switch__ball"></span>
+			<i class="ri-sun-line switch__sun"></i>
+			<i class="ri-moon-line switch__moon"></i>
+		</label> -->
+		<i class="fas fa-adjust"></i>
+	</button>
 			</div>
         </nav>
     </header>
@@ -80,7 +87,7 @@
 
     <div class="paraContent" style="height:600px;font-size:36px">
         <div class="container">
-            <br><br><br>
+            <br><br>
             <h1>BUGATTI DIVO</h1>
             <hr>
             <p>The Bugatti Divo is a mid-engine track-focused sports car developed and manufactured by Bugatti
@@ -96,15 +103,18 @@
 
 
     <div class="parallas ">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		
+		<h1>EXPERIENCE THE BUGATTI W16 MATERIAL</h1>
+        <p>The Ultimate Roadester, Inspired By The Legendary Wind.</p>
 		<!-- <video img-fluid src="./images/chirron full.mp4" loop autoplay muted ></video> -->
     </div>
 
     <div class="paraContent" style="height:600px;font-size:36px">
         <div class="container">
-            <br><br><br>
+            <br><br><br><br>
             <h1>Performance</h1>
-            <hr>
+            <hr><br>
             <p>The car is 8.0 seconds quicker than the Chiron around the Nardò test track according to the manufacturer
                 and generates 456 kg (1,005 lb) of downforce at top speed, 90 kg (198 lb) more than the Chiron. The
                 top speed is, however, reduced to 380 km/h (236 mph), owing to the extra drag produced by the
@@ -120,11 +130,19 @@
 
     <!-- Parallal X work ends here -->
 
-
+<br><br><br><br><br>	
+<br><br><br><br><br>	
+<br><br><br><br><br>	
+<br><br><br><br><br>	
+<br><br><br><br><br>	
+<br><br><br><br><br>	
     <!-- Background Video start here -->
 	
 	<div class="background">
-		<p>Official Launch of Bugatti Divo </p>
+		<div class="container">
+		<p>OFFICIAL LAUNCH OF BUGATTI DIVO </p><hr>
+	</div>
+		<br><br><br><br><br><br>
         <video class="img-fluid" muted loop autoplay>
             <source  src="./images/Divo documentry.mp4" type="video/mp4">
         </video>
@@ -137,7 +155,8 @@
 <br><br>
 <br><br>
 <br><br>
-    <div class="container">
+
+    <!-- <div class="container">
     <div class="hero-container">
 		<div class="main-container">
 			<div class="poster-container">
@@ -273,7 +292,7 @@
 		</div>
 
     </div>
-</div>
+</div> -->
 
 
 
@@ -294,6 +313,24 @@
 
 
     <!-- // NAVIGATION SCROLLING JAVASCRIPT START -->
+	<script>
+		const bodyEl = document.body
+			const switchEl = document.querySelector('.switch')
+			const activeTheme = localStorage.getItem('theme')
+
+			if (activeTheme) {
+				bodyEl.classList.add('dark')
+			}
+            switchEl.addEventListener('click', function () {
+				bodyEl.classList.toggle('dark')
+				if (bodyEl.classList.contains('dark')) {
+					localStorage.setItem('theme', 'dark')
+				} else {
+					localStorage.removeItem('theme')
+				}
+			})
+			
+	</script>
     <script>
         const isScrolling = () => {
             const headerEl = document.querySelector('.primary-header')

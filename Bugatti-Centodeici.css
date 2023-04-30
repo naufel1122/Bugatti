@@ -10,6 +10,7 @@ html {
   font-size: 62.5%;
 }
 body {
+  min-width: 400px;
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
   color: var(--body-color);
@@ -22,6 +23,7 @@ body {
         color: inherit;
     }
     /* End general styles */
+    
     .primary-header {
         position: fixed;
         top: 0%;
@@ -32,7 +34,7 @@ body {
         color: #fff;
         
       }
-    .container {
+    .register {
         max-width: 120rem;
         margin-inline: auto;
         padding-inline: 10.5rem;
@@ -49,6 +51,7 @@ body {
     .navbar a{
         color: #fff;
         font-size: 24px;
+        text-align: center;
     }
     .navbar ul li a{
         color: #fff;
@@ -179,7 +182,7 @@ body {
     .parallax p{
       margin-bottom: 50px ;
       margin-left: 10%;
-      font: 900 20px/1.8 "Lato", sans-serif;
+      font: 900 2REM/1.8 "Lato", sans-serif;
       color: #808080;
     }
     .parallax button{
@@ -202,16 +205,19 @@ body {
     }
     .paraContent h1{
       font-weight: bold;
-      font: 900 48px/1.8 "Lato", sans-serif;
+      font: 900 4vw/1.8 "Lato", sans-serif;
     }
     .paraContent p{
-      font: 200 20px/1.8 "Lato", sans-serif;
+      font: 200 2rem/1.8 "Lato", sans-serif;
 
     }
+    /* PARALLAL X CSS ENDS HERE */
     
+    /* PARALLAL S START HERE */ 
     .parallas {
-      background-image: url("./images/divo\ interer.jpg");
-      min-height: 80vh;   
+      background-image: url('./images/01-Bugatti-Divo-Interior-Design-02.jpg');
+      /* background-image: url("./images/divo\ interer.jpg"); */
+      min-height: 100vh;   
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
@@ -225,13 +231,29 @@ body {
       background-size: cover;
       opacity: 0.70;
     }
+    .parallas h1{
+      text-shadow: 4px 4px  rgb(54, 53, 53);
 
-   
-    /* PARALLAL X CSS ENDS HERE */
+      margin-bottom: 3rem ;
+      text-align: center;
+      font-weight: bold;
+      font: 900 4rem/1.8 "Lato", sans-serif;
+      color: #e9e1e1;
+    }
+    .parallas p{
+      text-align: center;
+      /* margin-bottom: 10 ; */
+      font: 400 2rem/1.8 "Lato", sans-serif;
+      color: #e9e1e1;
+      text-shadow: 4px 4px  rgb(54, 53, 53);
+    }
+    
+
+   /* PARALLAL S ENDS HERE */
 
     /* BACKGROUND VIDEO CSS */
-    .background video{
-      /* position: absolute; */
+    /* .background video{
+      position: absolute;
       min-height: 80vh;
       background-attachment: fixed;
       background-position: center;
@@ -240,12 +262,12 @@ body {
     right: 0;
     bottom: 0;
     z-index: -1;
-    }
+    } */
 
     .background p{
       text-align: center;
-      font-size: 48px;
-      font-weight:bold;
+      font-size: 3.6vw;
+      font-weight:900;
       font-family: "Lato", sans-serif;
     }
 
