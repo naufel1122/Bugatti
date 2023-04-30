@@ -214,8 +214,7 @@ body {
     /* PARALLAL X CSS ENDS HERE */
     
     /* PARALLAL S START HERE */ 
-    .parallas {
-      background-image: url('./images/01-Bugatti-Divo-Interior-Design-02.jpg');
+    .parallas {      background-image: url('./images/01-Bugatti-Divo-Interior-Design-02.jpg');
       /* background-image: url("./images/divo\ interer.jpg"); */
       min-height: 100vh;   
       background-attachment: fixed;
