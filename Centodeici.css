@@ -1,21 +1,89 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&family=Stylish&display=swap");
-:root {
-  --title-color: #333;
-  --body-color: #696969;
-  --background-color: #eee;
-  --foreground-color: #fff;
-  --blend-mode: normal;
+    :root {
+	--title-color: #333;
+	--body-color: #696969;
+	--background-color: #eee;
+	--foreground-color: #fff;
+	--blend-mode: normal;
 }
 .dark {
-  --title-color: #fff;
-  --body-color: #afafaf;
-  --background-color: #181621;
-  --foreground-color: #211f2a;
-  --blend-mode: lighten;
+	--title-color: #fff;
+	--body-color: #afafaf;
+	--background-color: #181621;
+	--foreground-color: #211f2a;
+	--blend-mode: lighten;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.6rem;
+	color: var(--body-color);
+	background-color: var(--background-color);
+	transition: color 0.25s, background-color 0.25s;
+}
+	/* THEME DARK / LIGHT CSS START HERE  */
+	a {
+  text-decoration: none;
+  color: #fff;
+}
+	#checkbox {
+	display: none;
 }
 .switch {
+  border: 3px solid var(--body-color);
+	position: relative;
+	display: flex;
+  justify-content: center;
+  width: 55px;
+	height: 25px;
+	border: 1.2px solid #6a6767;
+	border-radius: 30px;
+	cursor: pointer;
+  background-color: transparent;
+  color: white;
+  /* color: var(--title-color); */
+	/* --title-color: #333; */
+	color: var(--title-color);
+
+
+}
+
+.switch > * {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.switch__ball {
+	left: 1px;
+	z-index: 10;
+	display: inline-block;
+	width: 2.2rem;
+	height: 2rem;
+	background-color: #6a6767;
+	border-radius: 50%;
+	transition: transform 0.5s cubic-bezier(0.52, -0.4, 0.27, 1.55);
+	color: var(--title-color);
+}
+.switch__sun {
+	left: 5px;
+}
+.switch__moon {
+	right: 5px;
+}
+#checkbox:checked + .switch__ball {
+	transform: translate(29px, -50%);
+}
+	/* THEME DARK / LIGHT CSS ENDS HERE  */
+/* .switch {
 	position: absolute;
 	top: 2.5rem;
 	right: 2.5rem;
@@ -29,28 +97,9 @@
 }
 .switch i {
 	font-size: 2rem;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html {
-  font-size: 62.5%;
-}
-body {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.6rem;
-  color: var(--body-color);
-  background-color: var(--background-color);
-  transition: color 0.25s, background-color 0.25s;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-}
-/* End general styles */
+} */
 
+/* NAVIGATION CSS START HERE */
 .primary-header {
   position: fixed;
   top: 0%;
@@ -63,7 +112,7 @@ a {
 .register {
   max-width: 120rem;
   margin-inline: auto;
-  padding-inline: 10.5rem;
+  padding-inline: 1.5rem;
 }
 .navbar {
   height: 7.5rem;
@@ -112,7 +161,12 @@ a {
 .nav-link:hover {
   color: #d3d3d3;
 }
-.button {
+.navbar-toggler{
+  background-color:#ffffffa3;
+  height: 3rem;
+  width:4rem;
+}
+/* .button {
   display: inline-block;
   background-color: #fff;
   color: #313131;
@@ -122,9 +176,9 @@ a {
 }
 .button:hover {
   background-color: #d3d3d3;
-}
+} */
 header.active {
-  background-color: #fff;
+  background-color:  #ffffffa3;
   box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
 }
 header.active .navbar {
@@ -144,75 +198,20 @@ header.active .button {
 header.active .button:hover {
   background-color: #151515;
 }
-
-/* PARALLAL X CSS START HERE */
-/* SWITCH button  */
-.switch {
-  position: absolute;
-  top: 2.5rem;
-  right: 2.5rem;
-  z-index: 9999;
-  width: 4rem;
-  height: 4rem;
-  border: 3px solid var(--body-color);
-  display: grid;
-  place-items: center;
-  cursor: pointer;
-}
-.switch i {
-  font-size: 2rem;
-}
-/* #checkbox {
-	display: none;
-}
-.switch {
-	position: relative;
-	display: inline-block;
-	width: 60px;
-	height: 31px;
-	border: 2px solid #0a0a0a;
-	border-radius: 30px;
-	cursor: pointer;
-  background-color: transparent;
-}
-.switch > * {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-  color: white;
-}
-.switch__ball {
-	left: 1px;
-	z-index: 10;
-	display: inline-block;
-	width: 25px;
-	height: 25px;
-	background-color: #0d0d0d;
-	border-radius: 50%;
-	transition: transform 0.5s cubic-bezier(0.52, -0.4, 0.27, 1.55);
-}
-.switch__sun {
-	left: 5px;
-}
-.switch__moon {
-	right: 5px;
-}
-#checkbox:checked + .switch__ball {
-	transform: translate(29px, -50%);
-} */
+/* NAVIGATION CSS ENDS HERE */
+/* PARALLAL x WORK START HERE */
 .parallax {
   margin: 0;
   padding: 0;
-  background-image: url("./images/divo\ carousel.png");
-  /* mix-blend-mode: var(--blend-mode); */
-
+  background-image:url("./images/divo\ carousel.png");
+  --blend-mode:normal;
   width: 100%;
   min-height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.85;
+  /* opacity: 0.85; */
 }
 .parallax h1 {
   margin-left: 10%;
@@ -292,19 +291,6 @@ header.active .button:hover {
 
 /* PARALLAL S ENDS HERE */
 
-/* BACKGROUND VIDEO CSS */
-/* .background video{
-      position: absolute;
-      min-height: 80vh;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size:cover cover;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    } */
-
 .background p {
   text-align: center;
   font-size: 3.5vw;
@@ -313,27 +299,8 @@ header.active .button:hover {
 
 }
 
-/* BACKGROUND VIDEO CSS */
-
-/* divo Production Card */
-
-
-.switch {
-  position: absolute;
-  top: 2.5rem;
-  right: 2.5rem;
-  z-index: 9999;
-  width: 4rem;
-  height: 4rem;
-  border: 3px solid var(--body-color);
-  display: grid;
-  place-items: center;
-  cursor: pointer;
-}
-.switch i {
-  font-size: 2rem;
-}
-.first-card {
+	/* FIRST CARDS CSS START HERE  */
+	.first-card {
   display: flex;
   flex-direction: row;
   max-width: 120rem;
@@ -410,3 +377,4 @@ header.active .button:hover {
     margin-top: 1.5rem;
   }
 }
+	/* FIRST CARDS CSS ENDS HERE  */
