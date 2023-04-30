@@ -1,6 +1,6 @@
 // THEME JAVASCRIPT
 const bodyEl = document.body
-			const switchEl = document.querySelector('.switch')
+			const switchEl = document.querySelector('.switch__ball')
 			const activeTheme = localStorage.getItem('theme')
 
 			if (activeTheme) {
@@ -22,7 +22,7 @@ const bodyEl = document.body
 			// NAVIGATION SCROLLING JAVASCRIPT START
 const isScrolling = () => {
     const headerEl = document.querySelector('.primary-header')
-    let windowPosition = window.scrollY > 250
+    let windowPosition = window.scrollY > 350
     headerEl.classList.toggle('active', windowPosition)
   }
   window.addEventListener('scroll', isScrolling);

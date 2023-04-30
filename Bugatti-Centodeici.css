@@ -1,6 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&family=Stylish&display=swap");
+:root {
+  --title-color: #333;
+  --body-color: #696969;
+  --background-color: #eee;
+  --foreground-color: #fff;
+  --blend-mode: normal;
+}
+.dark {
+  --title-color: #fff;
+  --body-color: #afafaf;
+  --background-color: #181621;
+  --foreground-color: #211f2a;
+  --blend-mode: lighten;
+}
+.switch {
+	position: absolute;
+	top: 2.5rem;
+	right: 2.5rem;
+	z-index: 9999;
+	width: 4rem;
+	height: 4rem;
+	border: 3px solid var(--body-color);
+	display: grid;
+	place-items: center;
+	cursor: pointer;
+}
+.switch i {
+	font-size: 2rem;
+}
 * {
   margin: 0;
   padding: 0;
@@ -10,119 +39,130 @@ html {
   font-size: 62.5%;
 }
 body {
-  min-width: 400px;
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
   color: var(--body-color);
   background-color: var(--background-color);
   transition: color 0.25s, background-color 0.25s;
-  /* background:linear-gradient(#313131,#808080,#151515) ; */
 }
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
-    /* End general styles */
-    
-    .primary-header {
-        position: fixed;
-        top: 0%;
-        left: 0;
-        z-index: 999;
-        width: 100%;
-        transition: background-color 0.5s;
-        color: #fff;
-        
-      }
-    .register {
-        max-width: 120rem;
-        margin-inline: auto;
-        padding-inline: 10.5rem;
-    }
-    .navbar {
-        height: 7.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border-bottom: 2px solid 
-            rgba(255, 255, 255, 0.05);
-        transition: height 0.25s;
-    }
-    .navbar a{
-        color: #fff;
-        font-size: 24px;
-        text-align: center;
-    }
-    .navbar ul li a{
-        color: #fff;
-        font-size: 16px;
-        font-weight: bold;
-        text-decoration: none;
-    }
-    .navbar .button{
-        color: #151515;
-        font-size: 16px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    .logo {
-        font-size: 2.7rem;
-        font-weight: 900;
-        /* color: #fff; */
-    }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* End general styles */
 
-    .nav-list {
-        list-style: none;
-        display: flex;
-        gap: 2.5rem;
-        margin-left: 5rem;
-        margin-right: auto;
-    }
-    .nav-link {
-        transition: color 0.25s;
-    }
-    .nav-list.nav-link a{
-        color: #fff;
-    }
-    .nav-link:hover {
-        color: #d3d3d3;
-    }
-    .button {
-        display: inline-block;
-        background-color: #fff;
-        color: #313131;
-        padding: 0.8rem 2rem;
-        border-radius: 2rem;
-        transition: background-color 0.25s;
-    }
-    .button:hover {
-        background-color: #d3d3d3;
-    }
-    header.active {
-        background-color: #fff;
-        box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
-    }
-    header.active .navbar {
-        height: 6rem;
-    }
-    header.active .logo,
-    header.active .nav-link {
-        color: #313131;
-    }
-    header.active .nav-link:hover {
-        color: #808080;
-    }
-    header.active .button {
-        background-color: #313131;
-        color: #fff;
-    }
-    header.active .button:hover {
-        background-color: #151515;
-    }
-      
-    /* PARALLAL X CSS START HERE */
+.primary-header {
+  position: fixed;
+  top: 0%;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  transition: background-color 0.5s;
+  color: #fff;
+}
+.register {
+  max-width: 120rem;
+  margin-inline: auto;
+  padding-inline: 10.5rem;
+}
+.navbar {
+  height: 7.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+  transition: height 0.25s;
+}
+.navbar a {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
+.navbar ul li a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.navbar .button {
+  color: #151515;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.logo {
+  font-size: 2.7rem;
+  font-weight: 900;
+  /* color: #fff; */
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+  margin-left: 5rem;
+  margin-right: auto;
+}
+.nav-link {
+  transition: color 0.25s;
+}
+.nav-list.nav-link a {
+  color: #fff;
+}
+.nav-link:hover {
+  color: #d3d3d3;
+}
+.button {
+  display: inline-block;
+  background-color: #fff;
+  color: #313131;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  transition: background-color 0.25s;
+}
+.button:hover {
+  background-color: #d3d3d3;
+}
+header.active {
+  background-color: #fff;
+  box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+}
+header.active .navbar {
+  height: 6rem;
+}
+header.active .logo,
+header.active .nav-link {
+  color: #313131;
+}
+header.active .nav-link:hover {
+  color: #808080;
+}
+header.active .button {
+  background-color: #313131;
+  color: #fff;
+}
+header.active .button:hover {
+  background-color: #151515;
+}
+
+/* PARALLAL X CSS START HERE */
 /* SWITCH button  */
-#checkbox {
+.switch {
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  z-index: 9999;
+  width: 4rem;
+  height: 4rem;
+  border: 3px solid var(--body-color);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.switch i {
+  font-size: 2rem;
+}
+/* #checkbox {
 	display: none;
 }
 .switch {
@@ -159,99 +199,101 @@ body {
 }
 #checkbox:checked + .switch__ball {
 	transform: translate(29px, -50%);
-}
-    .parallax {
-      margin: 0;
-      padding: 0;
-      background-image: url("./images/divo\ carousel.png");
-      width: 100%;
-      min-height: 100vh; 
-      background-attachment: fixed;
-      background-position:center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      opacity: 0.85;
-    }
-    .parallax h1{
-      margin-left:10%;
-      font-weight: bold;
-      /* font: 900 48px ; */
-      font: 900 4rem/1.8 "Lato", sans-serif;
-      color: #808080;
-    }
-    .parallax p{
-      margin-bottom: 50px ;
-      margin-left: 10%;
-      font: 900 2REM/1.8 "Lato", sans-serif;
-      color: #808080;
-    }
-    .parallax button{
-      margin-left: 10%;
-      height: 50px;
-      width: 200px;
-      font: 900 16px/1.8 "Lato", sans-serif;
-      color: white;
-      border: 1px solid #fff;
-      background-color: transparent;
-    }
-    .parallax button:hover{
-      background-color: rgba(255, 255, 255, 0.699);
-      color: rgb(43, 43, 43);
-      transition-duration:0.8s;
-    }
-    .paraContent{
-      text-align: center;
-      font-weight: bold;
-    }
-    .paraContent h1{
-      font-weight: bold;
-      font: 900 4vw/1.8 "Lato", sans-serif;
-    }
-    .paraContent p{
-      font: 200 2rem/1.8 "Lato", sans-serif;
+} */
+.parallax {
+  margin: 0;
+  padding: 0;
+  background-image: url("./images/divo\ carousel.png");
+  /* mix-blend-mode: var(--blend-mode); */
 
-    }
-    /* PARALLAL X CSS ENDS HERE */
-    
-    /* PARALLAL S START HERE */ 
-    .parallas {      background-image: url('./images/01-Bugatti-Divo-Interior-Design-02.jpg');
-      /* background-image: url("./images/divo\ interer.jpg"); */
-      min-height: 100vh;   
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover ;
-      /* opacity: 0.70; */
-    }
-    .parallas video{
+  width: 100%;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.85;
+}
+.parallax h1 {
+  margin-left: 10%;
+  font-weight: bold;
+  /* font: 900 48px ; */
+  font: 900 4rem/1.8 "Lato", sans-serif;
+  color: #808080;
+}
+.parallax p {
+  margin-bottom: 50px;
+  margin-left: 10%;
+  font: 900 2rem/1.8 "Lato", sans-serif;
+  color: #808080;
+}
+.parallax button {
+  margin-left: 10%;
+  height: 50px;
+  width: 200px;
+  font: 900 16px/1.8 "Lato", sans-serif;
+  color: white;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+.parallax button:hover {
+  background-color: rgba(255, 255, 255, 0.699);
+  color: rgb(43, 43, 43);
+  transition-duration: 0.8s;
+}
+.paraContent {
+  text-align: center;
+  font-weight: bold;
+}
+.paraContent h1 {
+  font-weight: bold;
+  font: 900 4vw/1.8 "Lato", sans-serif;
+}
+.paraContent p {
+  font: 200 2rem/1.8 "Lato", sans-serif;
+}
+/* PARALLAL X CSS ENDS HERE */
+
+/* PARALLAL S START HERE */
+.parallas {
+  /* mix-blend-mode: var(--blend-mode); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./images/01-Bugatti-Divo-Interior-Design-02.jpg");
+  /* background-image: url("./images/divo\ interer.jpg"); */
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* opacity: 0.70; */
+}
+/* .parallas video{
       background-position: center;
       background-attachment: fixed;
       background-repeat: no-repeat;
       background-size: cover;
       opacity: 0.70;
-    }
-    .parallas h1{
-      text-shadow: 4px 4px  rgb(54, 53, 53);
+    } */
+.parallas h1 {
+  text-shadow: 4px 4px rgb(54, 53, 53);
+  margin-bottom: 10rem;
+  text-align: center;
+  font-weight: bold;
+  font: 900 3.5rem/1.8 "Lato", sans-serif;
+  color: #e9e1e1;
+}
+.parallas p {
+  text-align: center;
+  /* margin-bottom: 10 ; */
+  font: 400 2rem/1.8 "Lato", sans-serif;
+  color: #e9e1e1;
+  text-shadow: 4px 4px rgb(54, 53, 53);
+}
 
-      margin-bottom: 3rem ;
-      text-align: center;
-      font-weight: bold;
-      font: 900 4rem/1.8 "Lato", sans-serif;
-      color: #e9e1e1;
-    }
-    .parallas p{
-      text-align: center;
-      /* margin-bottom: 10 ; */
-      font: 400 2rem/1.8 "Lato", sans-serif;
-      color: #e9e1e1;
-      text-shadow: 4px 4px  rgb(54, 53, 53);
-    }
-    
+/* PARALLAL S ENDS HERE */
 
-   /* PARALLAL S ENDS HERE */
-
-    /* BACKGROUND VIDEO CSS */
-    /* .background video{
+/* BACKGROUND VIDEO CSS */
+/* .background video{
       position: absolute;
       min-height: 80vh;
       background-attachment: fixed;
@@ -263,177 +305,108 @@ body {
     z-index: -1;
     } */
 
-    .background p{
-      text-align: center;
-      font-size: 3.6vw;
-      font-weight:900;
-      font-family: "Lato", sans-serif;
-    }
+.background p {
+  text-align: center;
+  font-size: 3.5vw;
+  font-weight:775;
+  font-family: "Playfair Display",;
 
-    /* BACKGROUND VIDEO CSS */
+}
+
+/* BACKGROUND VIDEO CSS */
+
+/* divo Production Card */
 
 
-    /* ANIMATION CARD */
-    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
-
-    /* * {
-      box-sizing: border-box;
-      padding: 0;
-      margin: 0;
-    }
-    
-    body {
-      background: #457fb4;
-      font-family: "Roboto", sans-serif;
-      display: flex;
-      height: 100vh;
-    } */
-    
-    .hero-container {
-      margin: auto;
-      display: flex;
-      justify-content: center;
-      position: relative ;
-      size: cover;
-      
-    }
-    
-    .main-container {
-      width: 270px;
-      height: 540px;
-      position: relative;
-      margin: 0 20px;
-    }
-    
-    .poster-container {
-      width: 230px;
-      position: absolute;
-      top: 0;
-      left: 20px;
-      z-index: 9999;
-    }
-    .poster-container img{
-      width: 100%;
-      height: 360px;
-    }
-    .poster {
-      width: 100%;
-      box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
-    }
-    
-    .ticket-container {
-      background: #fff;
-      width: 270px;
-      height: 520px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border-radius: 5px;
-      position: absolute;
-      top: 20px;
-      box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
-      opacity: 0;
-    }
-    
-    .main-container:hover .ticket-container {
-      opacity: 1;
-      animation: bounceIn 0.6s linear;
-    }
-    
-    @keyframes bounceIn {
-      0%,
-      20%,
-      40%,
-      60%,
-      80%,
-      to {
-        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-      }
-      0% {
-        opacity: 0;
-        -webkit-transform: scale3d(0.3, 0.3, 0.3);
-        transform: scale3d(0.3, 0.3, 0.3);
-      }
-      20% {
-        -webkit-transform: scale3d(1.03, 1.03, 1.03);
-        transform: scale3d(1.03, 1.03, 1.03);
-      }
-      40% {
-        -webkit-transform: scale3d(0.9, 0.9, 0.9);
-        transform: scale3d(0.9, 0.9, 0.9);
-      }
-      60% {
-        opacity: 1;
-        -webkit-transform: scale3d(1.01, 1.01, 1.01);
-        transform: scale3d(1.01, 1.01, 1.01);
-      }
-      80% {
-        -webkit-transform: scale3d(0.97, 0.97, 0.97);
-        transform: scale3d(0.97, 0.97, 0.97);
-      }
-      to {
-        opacity: 1;
-        -webkit-transform: scaleX(1);
-        transform: scaleX(1);
-      }
-    }
-    
-    /* @keyframes bounce {
-      50% {
-        opacity: 1;
-        transform: scale(1.1);
-      }
-    
-      100% {
-        opacity: 1;
-        transform: scale(1);
-      }
-    } */
-    
-    .ticket__content {
-      width: 100%;
-      position: absolute;
-      bottom: 0;
-      text-align: center;
-      /* position: fixed; */
-
-    }
-    
-    .ticket__movie-title {
-      text-transform: uppercase;
-      margin-bottom: 5px;
-    }
-    
-    .ticket__movie-slogan {
-      color: #999;
-      font-size: 0.9rem;
-      margin-bottom: 20px;
-    }
-    
-    .ticket__current-price {
-      color: #69c982;
-      font-size: 1.4rem;
-      font-weight: bold;
-    }
-    
-    .ticket__old-price {
-      color: #999;
-      text-decoration: line-through;
-      margin-bottom: 10px;
-    }
-    
-    .ticket__buy-btn {
-      cursor: pointer;
-      width: 100%;
-      background: #2f2f2f;
-      color: white;
-      padding: 15px 0;
-      font-size: 1rem;
-      font-weight: bold;
-      text-transform: uppercase;
-      border: 0;
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px;
-    }
-    /* ANIMATION CARD */
+.switch {
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  z-index: 9999;
+  width: 4rem;
+  height: 4rem;
+  border: 3px solid var(--body-color);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.switch i {
+  font-size: 2rem;
+}
+.first-card {
+  display: flex;
+  flex-direction: row;
+  max-width: 120rem;
+  padding-inline: 1.5rem;
+  margin-inline: auto;
+}
+.card {
+  display: flex;
+  background-color: var(--foreground-color);
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.05);
+  transition: background-color 0.25s;
+}
+.card__image {
+  flex: 1;
+  mix-blend-mode: var(--blend-mode);
+}
+.card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('./images/Bugatti-Divo\ parallal.jpg');
+  /* mix-blend-mode: var(--blend-mode); */
+}
+.card__body {
+  flex: 1;
+  padding: 5rem;
+}
+.card__body p {
+  font-size: 1.5rem;
+  font-family: "Playfair Display", sans-serif;
+  color: var(--title-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+.card__title {
+  font-family: "Playfair Display", sans-serif;
+  font-size: clamp(3rem, 5vw, 5rem);
+  color: var(--title-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+}
+.card__subtitle {
+  font-size: 1.4rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+.card__body p:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.card__button {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--body-color);
+  padding: 1rem 2.5rem;
+  margin-top: 2.5rem;
+  border: 2px solid var(--body-color);
+}
+.card__button span {
+  display: inline-block;
+  transition: transform 0.25s;
+}
+.card__button:hover span {
+  transform: translateX(0.75rem);
+}
+@media screen and (max-width: 56.25em) {
+  .card {
+    flex-direction: column;
+  }
+  .card__body {
+    padding: 2.5rem;
+  }
+  .card__button {
+    margin-top: 1.5rem;
+  }
+}

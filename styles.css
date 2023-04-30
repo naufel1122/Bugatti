@@ -93,28 +93,14 @@ a {
 .nav-link:hover {
   color: #fbf8f8;
 }
-/* .switch {
-  display: inline-block;
-  background-color: #fff;
-  color: #313131;
-  padding: 0.8rem 2rem;
-  border-radius: 2rem;
-  transition: background-color 0.25s;
-  display: flex;
-  justify-content: center;
-  font-weight: bold;
-  
-} */
-/* .switch a {
-  text-decoration: none;
-  background-color: none;
-  color: black;
-  display: flex;
-  justify-content: center;
-} */
+.navbar-toggler{
+  background-color:#ffffffa3;
+  height: 3rem;
+  width:4rem;
+}
 
 header.active {
-  background-color: #fff;
+  background-color: #ffffffa3;
   box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
 }
 header.active .navbar {
@@ -145,14 +131,16 @@ header button {
 .switch {
   border: 3px solid var(--body-color);
 	position: relative;
-	display: inline-block;
-	width: 60px;
+	display: flex;
+  justify-content: center;
+  width: 60px;
 	height: 31px;
 	border: 1.2px solid #0a0a0a;
 	border-radius: 30px;
 	cursor: pointer;
   background-color: transparent;
   color: white;
+  color: var(--title-color);
 }
 
 .switch > * {
@@ -522,30 +510,6 @@ div > span {
   font-family: serif;
   text-align: center;
 }
-/* .header button {
-  font-size: 20px;
-  width: 200px;
-  color: #ffffffac;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-family: serif;
-  text-align: center;
-  height: 55px;
-  text-decoration: none;
-  cursor: pointer;
-  background-color: transparent;
-  border: 2px solid var(--body-color);
-  border-radius: 12px;
-}
-
-.header button:hover {
-  background-color: #ffffff8b;
-  transition-duration: 0.5s;
-  color: #151515;
-} */
 .header #navbar {
   text-align: center;
   font-weight: bold;
@@ -683,7 +647,7 @@ div > span {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* mix-blend-mode: var(--blend-mode); */
+  mix-blend-mode: var(--blend-mode);
 }
 .card__body {
   flex: 1;
