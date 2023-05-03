@@ -249,44 +249,35 @@ header.active .button:hover {
   font: 900 4vw/1.8 "Lato", sans-serif;
 }
 .paraContent p {
-  font: 200 2rem/1.8 "Lato", sans-serif;
+  font: 200 1.9vw/1.8 "Lato", sans-serif;
 }
 /* PARALLAL X CSS ENDS HERE */
 
 /* PARALLAL S START HERE */
 .parallas {
-  /* mix-blend-mode: var(--blend-mode); */
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("./images/01-Bugatti-Divo-Interior-Design-02.jpg");
-  /* background-image: url("./images/divo\ interer.jpg"); */
-  min-height: 100vh;
+  min-height: 90vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   /* opacity: 0.70; */
 }
-/* .parallas video{
-      background-position: center;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      background-size: cover;
-      opacity: 0.70;
-    } */
+
 .parallas h1 {
   text-shadow: 4px 4px rgb(54, 53, 53);
-  margin-bottom: 10rem;
+  /* margin-bottom: 10rem; */
   text-align: center;
   font-weight: bold;
-  font: 900 3.5rem/1.8 "Lato", sans-serif;
+  font: 900 3rem/1.8 "Lato", sans-serif;
   color: #e9e1e1;
 }
 .parallas p {
   text-align: center;
-  /* margin-bottom: 10 ; */
-  font: 400 2rem/1.8 "Lato", sans-serif;
+  font: 400 1.6rem/1.8 "Lato", sans-serif;
   color: #e9e1e1;
-  text-shadow: 4px 4px rgb(54, 53, 53);
+  /* text-shadow: 4px 4px rgb(54, 53, 53); */
 }
 
 /* PARALLAL S ENDS HERE */
@@ -299,6 +290,7 @@ header.active .button:hover {
 }
 .back-2{
   position: relative;
+  opacity:.90;
 }
 .back-2 img{
   max-width: 100%;
@@ -309,6 +301,8 @@ height: auto;
   top: 8%;
   color: #b4b5b9;
   margin-left: 10px;
+  text-shadow: 4px 4px 15px rgb(0, 0, 0);
+
   /* padding: 0px; */
 }
 .back-Text h1{
