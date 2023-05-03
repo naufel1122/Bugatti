@@ -296,8 +296,49 @@ header.active .button:hover {
   font-size: 3.5vw;
   font-weight:775;
   font-family: "Playfair Display",;
-
 }
+.back-2{
+  position: relative;
+}
+.back-2 img{
+  max-width: 100%;
+height: auto;
+}
+.back-Text{
+  position: absolute;
+  top: 8%;
+  color: #b4b5b9;
+  margin-left: 10px;
+  /* padding: 0px; */
+}
+.back-Text h1{
+  
+  /* color: transparent; */
+  font-family: "Playfair Display",;
+  font:900 2.3vw/1.8 "lato", sans-serif ;
+  /* line-height: 5ch; */
+}
+.back-Text button{
+ margin-left: 10%;
+  height: 50px;
+  width: 200px;
+  font: 900 16px/1.8 "Lato", sans-serif;
+  color: white;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+.back-Text button:hover{
+  background-color: #4c4d52;
+  transition-duration: 0.4s;
+}
+
+@media (min-width:40em) {
+.back-Text{ 
+    font-size: 2rem;
+  
+}
+}
+
 /* .background video{
   
   box-shadow: 0px 3px 4px 4px rgb(49, 47, 47);;
