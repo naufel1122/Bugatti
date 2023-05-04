@@ -1,104 +1,82 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&family=Stylish&display=swap");
-    :root {
-	--title-color: #333;
-	--body-color: #696969;
-	--background-color: #eee;
-	--foreground-color: #fff;
-	--blend-mode: normal;
+:root {
+  --title-color: #333;
+  --body-color: #696969;
+  --background-color: #eee;
+  --foreground-color: #fff;
+  --blend-mode: normal;
 }
 .dark {
-	--title-color: #fff;
-	--body-color: #afafaf;
-	--background-color: #181621;
-	--foreground-color: #211f2a;
-	--blend-mode: lighten;
+  --title-color: #fff;
+  --body-color: #afafaf;
+  --background-color: #181621;
+  --foreground-color: #211f2a;
+  --blend-mode: lighten;
 }
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 html {
-	font-size: 62.5%;
+  font-size: 62.5%;
 }
 body {
-	font-family: 'Poppins', sans-serif;
-	font-size: 1.6rem;
-	color: var(--body-color);
-	background-color: var(--background-color);
-	transition: color 0.25s, background-color 0.25s;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  color: var(--body-color);
+  background-color: var(--background-color);
+  transition: color 0.25s, background-color 0.25s;
 }
-	/* THEME DARK / LIGHT CSS START HERE  */
-	a {
+/* THEME DARK / LIGHT CSS START HERE  */
+a {
   text-decoration: none;
   color: #fff;
 }
-	#checkbox {
-	display: none;
+#checkbox {
+  display: none;
 }
 .switch {
   border: 3px solid var(--body-color);
-	position: relative;
-	display: flex;
+  position: relative;
+  display: flex;
   justify-content: center;
   width: 55px;
-	height: 25px;
-	border: 1.2px solid #6a6767;
-	border-radius: 30px;
-	cursor: pointer;
+  height: 25px;
+  border: 1.2px solid #6a6767;
+  border-radius: 30px;
+  cursor: pointer;
   background-color: transparent;
   color: white;
-  /* color: var(--title-color); */
-	/* --title-color: #333; */
-	color: var(--title-color);
-
-
+  color: var(--title-color);
 }
-
 .switch > * {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .switch__ball {
-	left: 1px;
-	z-index: 10;
-	display: inline-block;
-	width: 2.2rem;
-	height: 2rem;
-	background-color: #6a6767;
-	border-radius: 50%;
-	transition: transform 0.5s cubic-bezier(0.52, -0.4, 0.27, 1.55);
-	color: var(--title-color);
+  left: 1px;
+  z-index: 10;
+  display: inline-block;
+  width: 2.2rem;
+  height: 2rem;
+  background-color: #6a6767;
+  border-radius: 50%;
+  transition: transform 0.5s cubic-bezier(0.52, -0.4, 0.27, 1.55);
+  color: var(--title-color);
 }
 .switch__sun {
-	left: 5px;
+  left: 5px;
 }
 .switch__moon {
-	right: 5px;
+  right: 5px;
 }
 #checkbox:checked + .switch__ball {
-	transform: translate(29px, -50%);
+  transform: translate(29px, -50%);
 }
-	/* THEME DARK / LIGHT CSS ENDS HERE  */
-/* .switch {
-	position: absolute;
-	top: 2.5rem;
-	right: 2.5rem;
-	z-index: 9999;
-	width: 4rem;
-	height: 4rem;
-	border: 3px solid var(--body-color);
-	display: grid;
-	place-items: center;
-	cursor: pointer;
-}
-.switch i {
-	font-size: 2rem;
-} */
-
 /* NAVIGATION CSS START HERE */
 .primary-header {
   position: fixed;
@@ -142,9 +120,7 @@ body {
 .logo {
   font-size: 2.7rem;
   font-weight: 900;
-  /* color: #fff; */
 }
-
 .nav-list {
   list-style: none;
   display: flex;
@@ -161,24 +137,13 @@ body {
 .nav-link:hover {
   color: #d3d3d3;
 }
-.navbar-toggler{
-  background-color:#ffffffa3;
+.navbar-toggler {
+  background-color: #ffffffa3;
   height: 3rem;
-  width:4rem;
+  width: 4rem;
 }
-/* .button {
-  display: inline-block;
-  background-color: #fff;
-  color: #313131;
-  padding: 0.8rem 2rem;
-  border-radius: 2rem;
-  transition: background-color 0.25s;
-}
-.button:hover {
-  background-color: #d3d3d3;
-} */
 header.active {
-  background-color:  #ffffffa3;
+  background-color: #ffffffa3;
   box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
 }
 header.active .navbar {
@@ -199,38 +164,37 @@ header.active .button:hover {
   background-color: #151515;
 }
 /* NAVIGATION CSS ENDS HERE */
+
 /* PARALLAL x WORK START HERE */
 .parallax {
   margin: 0;
   padding: 0;
-  background-image:url("./images/divo\ carousel.png");
-  --blend-mode:normal;
+  background-image: url("./images/divo\ carousel.png");
+  --blend-mode: normal;
   width: 100%;
   min-height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* opacity: 0.85; */
 }
 .parallax h1 {
   margin-left: 10%;
   font-weight: bold;
-  /* font: 900 48px ; */
-  font: 900 4rem/1.8 "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #808080;
 }
 .parallax p {
   margin-bottom: 50px;
   margin-left: 10%;
-  font: 900 2rem/1.8 "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #808080;
 }
 .parallax button {
   margin-left: 10%;
   height: 50px;
   width: 200px;
-  font: 900 16px/1.8 "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: white;
   border: 1px solid #fff;
   background-color: transparent;
@@ -246,10 +210,10 @@ header.active .button:hover {
 }
 .paraContent h1 {
   font-weight: bold;
-  font: 900 4vw/1.8 "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .paraContent p {
-  font: 200 1.9vw/1.8 "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 /* PARALLAL X CSS ENDS HERE */
 
@@ -262,41 +226,40 @@ header.active .button:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* opacity: 0.70; */
 }
 
 .parallas h1 {
   text-shadow: 4px 4px rgb(54, 53, 53);
-  /* margin-bottom: 10rem; */
+  margin-bottom: 60px;
   text-align: center;
   font-weight: bold;
-  font: 900 3rem/1.8 "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #e9e1e1;
 }
 .parallas p {
   text-align: center;
-  font: 400 1.6rem/1.8 "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #e9e1e1;
-  /* text-shadow: 4px 4px rgb(54, 53, 53); */
+  font-size: 1.5rem;
+  font-weight: 200;
 }
-
 /* PARALLAL S ENDS HERE */
 
 .background p {
   text-align: center;
   font-size: 3.5vw;
-  font-weight:775;
-  font-family: "Playfair Display",;
+  font-weight: 775;
+  font-family: "Playfair Display";
 }
-.back-2{
+.back-2 {
   position: relative;
-  opacity:.90;
+  opacity: 0.9;
 }
-.back-2 img{
+.back-2 img {
   max-width: 100%;
-height: auto;
+  height: auto;
 }
-.back-Text{
+.back-Text {
   position: absolute;
   top: 8%;
   color: #b4b5b9;
@@ -305,194 +268,204 @@ height: auto;
 
   /* padding: 0px; */
 }
-.back-Text h1{
-  
-  /* color: transparent; */
-  font-family: "Playfair Display",;
-  font:900 2.3vw/1.8 "lato", sans-serif ;
-  /* line-height: 5ch; */
+.back-Text h1 {
+  margin-left: 40px;
+  font: 700 2.5vw/1.8 "lato", sans-serif;
 }
-.back-Text button{
- margin-left: 10%;
-  height: 50px;
-  width: 200px;
-  font: 900 16px/1.8 "Lato", sans-serif;
+.back-Text button {
+  margin-left: 10%;
+  height: 5rem;
+  width: 18rem;
+  font: 500 1rem/1.8 "Lato", sans-serif;
   color: white;
   border: 1px solid #fff;
   background-color: transparent;
 }
-.back-Text button:hover{
-  background-color: #4c4d52;
+.back-Text button:hover {
+  background-color: #b2b2b2;
   transition-duration: 0.4s;
 }
 
-@media (min-width:40em) {
-.back-Text{ 
+@media (min-width: 40em) {
+  .back-Text {
     font-size: 2rem;
-  
-}
-}
-
-/* .background video{
-  
-  box-shadow: 0px 3px 4px 4px rgb(49, 47, 47);;
-} */
-
-	/* Card 1 CSS START  */
-  .article-card{
-    display: flex;
-    justify-content: end;
   }
-  .blog-post {
-	--background-color: #181621;
+}
+/* Last card CSS */
+.last{
+  display: flex;
+  position: relative;
+  height: 800px;
+  width: 100%;
+  background-color: #211f2a;
+}
+.semi{
+height: 100%;
+width: 50%;
+background-color: #6c777e;
+}
+.semi > .container{
+}
+.semi-2{
+  height: 100%;
+  width: 50%;
+  background-color: #0a0b0b;
+}
+/* Last card CSS */
+/* Card 1 CSS START  */
+.article-card {
+  display: flex;
+  justify-content: end;
+}
+.blog-post {
+  --background-color: #181621;
 
-    display: flex;
-    /* align-items: center; */
-    max-width: 90rem;
-    background-color: #fff;
-    padding: 2.5rem;
-    box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
-    border-radius: 0.8rem;
+  display: flex;
+  /* align-items: center; */
+  max-width: 90rem;
+  background-color: #fff;
+  padding: 2.5rem;
+  box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.8rem;
+}
+.blog-post__img {
+  position: relative;
+  min-width: 35rem;
+  max-width: 35rem;
+  height: 30rem;
+  transform: translateX(-8rem);
+}
+.blog-post__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+.blog-post__img::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, #868282 0%, #000000 100%);
+  box-shadow: 0.5rem 0.5rem 3rem 1px rgba(0, 0, 0, 0.05);
+  border-radius: 0.8rem;
+  opacity: 0.5;
+}
+.blog-post__date span {
+  display: block;
+  color: #8e8c8c;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+.blog-post__title {
+  --title-color: #fff;
+
+  font-size: 2.5rem;
+  margin: 1.5rem 0 2rem;
+  text-transform: uppercase;
+  color: #6c777e;
+}
+.blog-post__info p {
+  --title-color: #fff;
+
+  margin-bottom: 3rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+.blog-post__cta {
+  display: inline-block;
+  background-image: linear-gradient(to right, #727a82 0%, #a8aeae 100%);
+  padding: 1.5rem 3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 0.8rem;
+}
+.blog-post__cta:hover {
+  background-image: linear-gradient(to right, #a8aeae 0%, #727a82 100%);
+}
+@media (max-width: 1068px) {
+  .blog-post {
+    max-width: 80rem;
   }
   .blog-post__img {
-    position: relative;
-    min-width: 35rem;
-    max-width: 35rem;
-    height: 30rem;
-    transform: translateX(-8rem);
+    min-width: 30rem;
+    max-width: 30rem;
   }
-  .blog-post__img img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 0.8rem;
+}
+@media (max-width: 868px) {
+  .blog-post {
+    max-width: 70rem;
   }
-  .blog-post__img::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to right, #868282 0%, #000000 100%);
-    box-shadow: 0.5rem 0.5rem 3rem 1px rgba(0, 0, 0, 0.05);
-    border-radius: 0.8rem;
-    opacity: 0.5;
-  }
-  .blog-post__date span {
-    display: block;
-    color: #8e8c8c;
-    font-weight: 600;
-    margin: 0.5rem 0;
-  }
-  .blog-post__title {
-	--title-color: #fff;
-
-    font-size: 2.5rem;
-    margin: 1.5rem 0 2rem;
-    text-transform: uppercase;
-    color: #6c777e;
-  }
-  .blog-post__info p {
-	--title-color: #fff;
-
-    margin-bottom: 3rem;
-    color: rgba(0, 0, 0, 0.7);
-  }
-  .blog-post__cta {
-    display: inline-block;
-    background-image: linear-gradient(to right, #727a82 0%, #a8aeae 100%);
-    padding: 1.5rem 3rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #fff;
-    border-radius: 0.8rem;
-  }
-  .blog-post__cta:hover {
-    background-image: linear-gradient(to right, #a8aeae 0%, #727a82 100%);
-  }
-  @media (max-width: 1068px) {
-    .blog-post {
-      max-width: 80rem;
-    }
-    .blog-post__img {
-      min-width: 30rem;
-      max-width: 30rem;
-    }
-  }
-  @media (max-width: 868px) {
-    .blog-post {
-      max-width: 70rem;
-    }
-  }
-  @media (max-width: 768px) {
-    .blog-post {
-      padding: 2.5rem;
-      flex-direction: column;
-    }
-    .blog-post__img {
-      min-width: 100%;
-      transform: translate(0, -8rem);
-    }
-  }
-	/* Card 1 CSS END */
-
-  .footer {
-    padding-block: 5rem;
-    background-color: #151823;
-    color: #666873;
-  }
-  .footer__container {
-    max-width: 116rem;
-    margin: auto;
-    padding: 0 1.5rem;
-  }
-  
-  .footer__top {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    row-gap: 2rem;
-  }
-  .footer__title {
-    font-size: 1.8rem;
-    color: #fff;
-    font-weight: 500;
-    margin-bottom: 2rem;
-  }
-  .footer__list {
-    display: flex;
+}
+@media (max-width: 768px) {
+  .blog-post {
+    padding: 2.5rem;
     flex-direction: column;
-    gap: 2rem;
   }
-  .footer__list-item {
-    list-style: none;
+  .blog-post__img {
+    min-width: 100%;
+    transform: translate(0, -8rem);
   }
-  .footer__list-link {
-    text-decoration: none;
-    color: inherit;
-    transition: color 0.25s;
-  }
-  .footer__list-link:hover {
-    color: #fff;
-  }
-  
+}
+/* Card 1 CSS END */
+
+.footer {
+  padding-block: 5rem;
+  background-color: #151823;
+  color: #666873;
+}
+.footer__container {
+  max-width: 116rem;
+  margin: auto;
+  padding: 0 1.5rem;
+}
+
+.footer__top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  row-gap: 2rem;
+}
+.footer__title {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer__list-item {
+  list-style: none;
+}
+.footer__list-link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.25s;
+}
+.footer__list-link:hover {
+  color: #fff;
+}
+
+.company__info {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-right: 5rem;
+}
+.company__logo {
+  color: #fff;
+}
+.company__info ul {
+  flex-direction: row;
+}
+.copyright {
+  margin-top: auto;
+}
+@media screen and (min-width: 40em) {
   .company__info {
-    grid-column: 1/-1;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    padding-right: 5rem;
+    grid-column: span 2;
   }
-  .company__logo {
-    color: #fff;
-  }
-  .company__info ul {
-    flex-direction: row;
-  }
-  .copyright {
-    margin-top: auto;
-  }
-  @media screen and (min-width: 40em) {
-    .company__info {
-      grid-column: span 2;
-    }
-  }
-  
+}
