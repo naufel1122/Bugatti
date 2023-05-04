@@ -187,7 +187,7 @@ header button {
 }
 .header > div{
   min-height: 300px;
-  font-family: Montserrat;
+  font-family: serif;
   font-size: 5.5vw;
   color: var(--white);
   letter-spacing: 0.2em;
