@@ -24,6 +24,8 @@ html {
   font-size: 62.5%;
 }
 body {
+  max-width: 100%;
+  height: 100%;
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
   color: var(--body-color);
@@ -185,7 +187,6 @@ header.active .button:hover {
   color: #808080;
 }
 .parallax p {
-  margin-bottom: 50px;
   margin-left: 10%;
   font-family: "Poppins", sans-serif;
   color: #808080;
@@ -221,28 +222,47 @@ header.active .button:hover {
 .parallas {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("./images/01-Bugatti-Divo-Interior-Design-02.jpg");
-  min-height: 90vh;
+  min-height: 110vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
 }
 
 .parallas h1 {
-  text-shadow: 4px 4px rgb(54, 53, 53);
-  margin-bottom: 60px;
+  /* text-shadow: 4px 4px rgb(54, 53, 53); */
+  /* margin-bottom: 10px; */
   text-align: center;
   font-weight: bold;
   font-family: "Poppins", sans-serif;
-  color: #e9e1e1;
+  color: #bbb2b259;
+  font-size: 6vw;
 }
-.parallas p {
+.parallas button {
+  border-radius: 60px;
+  margin: 40px;
+  padding: 10px;
+  height: 70px;
+  width: 300px;
+  font-family: "Poppins", sans-serif;
+  color: #bbb2b27b;
+  font-weight: bolder;
+  border: 1px solid #ffffff29;
+  background-color: transparent;
+}
+.parallas button:hover {
+  background-color: rgba(255, 255, 255, 0.281);
+  color: rgb(10, 10, 10);
+  transition-duration: 0.8s;
+}
+/* .parallas p {
   text-align: center;
   font-family: "Poppins", sans-serif;
   color: #e9e1e1;
   font-size: 1.5rem;
   font-weight: 200;
-}
+} */
 /* PARALLAL S ENDS HERE */
 
 .background p {
@@ -292,21 +312,20 @@ header.active .button:hover {
   }
 }
 /* Last card CSS */
-.last{
+.last {
   display: flex;
   position: relative;
   height: 800px;
   width: 100%;
   background-color: #211f2a;
 }
-.semi{
-height: 100%;
-width: 50%;
-background-color: #6c777e;
+.semi {
+  height: 100%;
+  width: 50%;
+  background-color: #6c777e;
 }
-.semi > .container{
-}
-.semi-2{
+
+.semi-2 {
   height: 100%;
   width: 50%;
   background-color: #0a0b0b;
