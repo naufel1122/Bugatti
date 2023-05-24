@@ -493,8 +493,9 @@ header.active .button:hover {
 /* Accordance */
 .title {
   font-size: clamp(26px, 5vw, 40px);
-  color: #fff;
+  color: #313131;
   margin-bottom: 30px;
+  --title-color: #fff;
 }
 
 .accordion-panel {
@@ -503,9 +504,54 @@ header.active .button:hover {
   border: 1px solid #777e91;
   border-radius: 8px;
 }
+.accordion-question .fon{
+  color: #313131;
+  --title-color: #fff;
 
+
+}
+/* .fon{
+color: #313131;
+--title-color: #fff;
+
+--title-color: #fff;
+--body-color: #afafaf;
+--background-color: #181621;
+--foreground-color: #211f2a;
+--blend-mode: lighten;
+
+}
+ .fon-2 {
+  color: #313131;
+  --title-color: #fff;
+
+  --title-color: #fff;
+  --body-color: #afafaf;
+ 
+}
+.fon-3{
+  color: #313131;
+  --title-color: #fff;
+
+
+  --title-color: #fff;
+  --body-color: #afafaf;
+ 
+}
+.fon-4{
+  color: #313131;
+  --title-color: #fff;
+
+
+  --title-color: #fff;
+  --body-color: #afafaf;
+  
+
+} */
 .accordion input {
   display: none;
+  --title-color: #fff;
+
 }
 
 .accordion label {
@@ -517,15 +563,17 @@ header.active .button:hover {
   color: #f4f5f6;
   cursor: pointer;
   transition: color 0.25s;
+  --title-color: #fff;
+
 }
 
 .accordion label:hover,
 .accordion input:checked + label {
-  color: #3b71fe;
+  color: #797474;
 }
 
 .accordion i {
-  color: #3b71fe;
+  color: #6a6c71;
 }
 
 .accordion .close {
@@ -547,7 +595,9 @@ header.active .button:hover {
 }
 
 .accordion-answer {
-  font-size: 14px;
+  --title-color: #fff;
+  font-family: 'poppins',sans-serif ;
+  font-size: 15px;
   color: #777e91;
   padding-top: 5px;
   padding-bottom: 7px;
@@ -565,3 +615,12 @@ header.active .button:hover {
   opacity: 1;
   transform: scale(1);
 }
+
+/* ============= */
+/* 
+.accordion h2{
+color: #313131;
+}
+.accordion label{
+  color:  #313131;
+} */
