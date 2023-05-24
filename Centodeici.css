@@ -31,6 +31,7 @@ body {
   color: var(--body-color);
   background-color: var(--background-color);
   transition: color 0.25s, background-color 0.25s;
+  overflow-x: hidden;
 }
 /* THEME DARK / LIGHT CSS START HERE  */
 a {
@@ -489,7 +490,6 @@ header.active .button:hover {
   }
 }
 
-
 /* Accordance */
 .title {
   font-size: clamp(26px, 5vw, 40px);
@@ -504,11 +504,9 @@ header.active .button:hover {
   border: 1px solid #777e91;
   border-radius: 8px;
 }
-.accordion-question .fon{
+.accordion-question .fon {
   color: #313131;
   --title-color: #fff;
-
-
 }
 /* .fon{
 color: #313131;
@@ -551,7 +549,6 @@ color: #313131;
 .accordion input {
   display: none;
   --title-color: #fff;
-
 }
 
 .accordion label {
@@ -564,7 +561,6 @@ color: #313131;
   cursor: pointer;
   transition: color 0.25s;
   --title-color: #fff;
-
 }
 
 .accordion label:hover,
@@ -596,7 +592,7 @@ color: #313131;
 
 .accordion-answer {
   --title-color: #fff;
-  font-family: 'poppins',sans-serif ;
+  font-family: "poppins", sans-serif;
   font-size: 15px;
   color: #777e91;
   padding-top: 5px;
@@ -617,10 +613,19 @@ color: #313131;
 }
 
 /* ============= */
-/* 
-.accordion h2{
-color: #313131;
+
+/* Video Parallal X */
+
+/* ============= */
+
+
+.paravideo{
+  height: 600px;
+  padding: 50px 0px;
 }
-.accordion label{
-  color:  #313131;
-} */
+.paravideo video{
+  min-height: 100%;
+  position:fixed;
+  top: 0  ;
+  z-index: -999;
+}
