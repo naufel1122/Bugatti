@@ -24,6 +24,7 @@ html {
   font-size: 62.5%;
 }
 body {
+  background-color: #fff;
   max-width: 100%;
   height: 100%;
   font-family: "Poppins", sans-serif;
@@ -169,36 +170,44 @@ header.active .button:hover {
 /* NAVIGATION CSS ENDS HERE */
 
 /* ============= */
+   .parallax { 
+    margin: 0;
+    padding: 0; 
+    min-height: 100vh; 
+  position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  --blend-mode: normal;
 
-
-
-
+  }
+  .parallax h1 {
+    text-align: center;
+    font-size: 3.9vw;
+    position:relative;
+    margin-bottom:10rem ;
+    margin-left: 1%;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff54;
+  }
+  .parallax video{
+    min-height: 100vh;
+    position:fixed;
+    top:0;
+    z-index: -999;
+  }
 .paraImage{
-    width: 100%;
-    height: 400px;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    padding: 100px 0;
+  background-image: url('./images/Bugatti-Chiron-Noire\ first\ card.webp');
+  
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.bg-1{
-    background-image: url(./images/Bugatti-Chiron-Noire\ first\ card.webp);
-}
-.bg-2{
-    background-image: url(./images/top\ card4.jpg);
-}
-.paraContent{
-    height: 300px;
-    padding: 50px 0px;
-}
-.paravideo{
-    height: 300px;
-     padding: 50px 0px;
-   }
-   .paravideo video{
-     min-height: 100%;
-     position:fixed;
-     top:0;
-     z-index: -999;
-   }
-   
-   
+
+  
