@@ -493,16 +493,29 @@ header.active .button:hover {
 /* Accordance */
 .title {
   font-size: clamp(26px, 5vw, 40px);
-  color: #313131;
+  /* color: #313131; */
   margin-bottom: 30px;
-  --title-color: #fff;
-}
+  color: var(--title-color);
 
+}
+.accordion p{
+  color: var(--title-color);
+}
+.fon{
+  color: var(--title-color);
+}
+.fon-3{
+  color: var(--title-color);
+  color: #333;
+
+}
 .accordion-panel {
   padding: 7px 21px;
   margin-bottom: 24px;
   border: 1px solid #777e91;
   border-radius: 8px;
+  background-color: var(--foreground-color);
+
 }
 .accordion-question .fon {
   color: #313131;
@@ -581,7 +594,7 @@ header.active .button:hover {
 /* ============= */
 
 
-.paravideo{
+/* .paravideo{
   height: 600px;
   padding: 50px 0px;
 }
@@ -590,4 +603,4 @@ header.active .button:hover {
   position:fixed;
   top: 0  ;
   z-index: -999;
-}
+} */
