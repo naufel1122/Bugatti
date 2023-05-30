@@ -272,79 +272,42 @@ header.active .button:hover {
   font-weight: 775;
   font-family: "Playfair Display";
 }
-.main-back{
+.main{
   display: flex;
-  /* flex-wrap: wrap; */
-  flex-direction: row;
-
+  flex-wrap: wrap;
+}
+.img{
+  width: 50%;
+}
+.img img{
+  width: 100%;
+}
+.tex{
+  width: 50%;
+}
+.tex h1{
+  margin-left: 20px;
+  font-family: "Playfair Display";
+  font-size: 1.5em;
+  font-weight: bolder;
+  text-align: center;
+}
+.tex p{
+  margin-left: 20px;
+  font-size: 1em;
+  text-align: center;
+  flex-wrap: wrap;
 }
 @media screen and (max-width:768px) {
-  .main-back{
+  .main{
     flex-direction: column;
+    justify-content: center;
+  }
+  .img{
     width: 100%;
   }
-  .image-wheel{
+  .tex{
     width: 100%;
-  }
-}
-.image-wheel{
-  width: 50%;
-  /* display: flex; */
-/* flex-wrap: wrap; */
-}
-.main-text{
-  font-family: "Playfair Display";
-  width: 50%;
-  padding: 15px;
-}
-.main-text p{
-  font-size: 1em;
-}
-
-
-/* .main-back {
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
-.back-2 {
-  position: relative;
-  opacity: 1;
-}
-.back-2 img {
-  max-width: 50%;
-  height: auto;
-}
-.back-Text {
-  position: absolute;
-  top: 8%;
-  color: #b4b5b9;
-  margin-left: 10px;
-  text-shadow: 4px 4px 15px rgb(0, 0, 0);
-
-  
-}
-.back-Text h1 {
-  margin-left: 40px;
-  font: 700 2.5vw/1.8 "lato", sans-serif;
-}
-.back-Text button {
-  margin-left: 10%;
-  height: 5rem;
-  width: 18rem;
-  font: 500 1rem/1.8 "Lato", sans-serif;
-  color: white;
-  border: 1px solid #fff;
-  background-color: transparent;
-}
-.back-Text button:hover {
-  background-color: #b2b2b2;
-  transition-duration: 0.4s;
-} */
-
-@media (min-width: 40em) {
-  .back-Text {
-    font-size: 2rem;
   }
 }
 /* Last card CSS */
