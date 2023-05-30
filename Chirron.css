@@ -172,7 +172,7 @@ header.active .button:hover {
 .parallax {
   margin: 0;
   padding: 0;
-  background-image: url("./images/bugatti_chiron_pur_sport_2020_4k_6-HD.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("./images/bugatti_chiron_pur_sport_2020_4k_6-HD.jpg");
   --blend-mode: normal;
   width: 100%;
   min-height: 100vh;
@@ -185,12 +185,14 @@ header.active .button:hover {
   margin-left: 10%;
   font-weight: bold;
   font-family: "Poppins", sans-serif;
-  color: #808080;
+  color: #cfcfcf;
+  font-size: 2.1em;
+
 }
 .parallax p {
   margin-left: 10%;
   font-family: "Poppins", sans-serif;
-  color: #808080;
+  color: #cfcfcf;
 }
 .parallax button {
   margin-left: 10%;

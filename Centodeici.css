@@ -172,7 +172,7 @@ header.active .button:hover {
 .parallax {
   margin: 0;
   padding: 0;
-  background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("./images/bugatti-bolide_16.jpg");
+  background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("./images/bugatti_centodieci_2_4k.jpg");
   --blend-mode: normal;
   width: 100%;
   min-height: 100vh;
@@ -224,7 +224,7 @@ header.active .button:hover {
 /* PARALLAL S START HERE */
 .parallas {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("./images/bugatti_interior_snap_1.jpg");
+    url("./images/fc5758-centodieci_by_danny_4.webp");
   min-height: 110vh;
   background-attachment: fixed;
   background-position: center;
