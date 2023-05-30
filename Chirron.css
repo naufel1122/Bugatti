@@ -24,7 +24,6 @@ html {
   font-size: 62.5%;
 }
 body {
-  background-color: #fff;
   max-width: 100%;
   height: 100%;
   font-family: "Poppins", sans-serif;
@@ -169,45 +168,470 @@ header.active .button:hover {
 }
 /* NAVIGATION CSS ENDS HERE */
 
-/* ============= */
-   .parallax { 
-    margin: 0;
-    padding: 0; 
-    min-height: 100vh; 
-  position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+/* PARALLAL x WORK START HERE */
+.parallax {
+  margin: 0;
+  padding: 0;
+  background-image: url("./images/bugatti_chiron_pur_sport_2020_4k_6-HD.jpg");
   --blend-mode: normal;
-
-  }
-  .parallax h1 {
-    text-align: center;
-    font-size: 3.9vw;
-    position:relative;
-    margin-bottom:10rem ;
-    margin-left: 1%;
-    font-weight: bold;
-    font-family: "Poppins", sans-serif;
-    color: #ffffff54;
-  }
-  .parallax video{
-    min-height: 100vh;
-    position:fixed;
-    top:0;
-    z-index: -999;
-  }
-.paraImage{
-  background-image: url('./images/Bugatti-Chiron-Noire\ first\ card.webp');
-  
-  /* Set a specific height */
-  min-height: 500px; 
-
-  /* Create the parallax scrolling effect */
+  width: 100%;
+  min-height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+.parallax h1 {
+  margin-left: 10%;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: #808080;
+}
+.parallax p {
+  margin-left: 10%;
+  font-family: "Poppins", sans-serif;
+  color: #808080;
+}
+.parallax button {
+  margin-left: 10%;
+  height: 50px;
+  width: 200px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+.parallax button:hover {
+  background-color: rgba(255, 255, 255, 0.699);
+  color: rgb(43, 43, 43);
+  transition-duration: 0.8s;
+}
+.paraContent {
+  text-align: center;
+  font-weight: bold;
+}
+.paraContent h1 {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+.paraContent p {
+  font-family: "Poppins", sans-serif;
+}
+/* PARALLAL X CSS ENDS HERE */
+
+/* PARALLAL S START HERE */
+.parallas {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./images/take-a-360-degree-video-tour-of-the-bugatti-chirons-opulent-interior.jpg");
+  min-height: 110vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.parallas h1 {
+  /* text-shadow: 4px 4px rgb(54, 53, 53); */
+  /* margin-bottom: 10px; */
+  text-align: center;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: #bbb2b259;
+  font-size: 6vw;
+}
+.parallas button {
+  border-radius: 60px;
+  margin: 40px;
+  padding: 10px;
+  height: 70px;
+  width: 300px;
+  font-family: "Poppins", sans-serif;
+  color: #bbb2b27b;
+  font-weight: bolder;
+  border: 1px solid #ffffff29;
+  background-color: transparent;
+}
+.parallas button:hover {
+  background-color: rgba(255, 255, 255, 0.281);
+  color: rgb(10, 10, 10);
+  transition-duration: 0.8s;
+}
+/* .parallas p {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #e9e1e1;
+  font-size: 1.5rem;
+  font-weight: 200;
+} */
+/* PARALLAL S ENDS HERE */
+
+.background p {
+  text-align: center;
+  font-size: 3.5vw;
+  font-weight: 775;
+  font-family: "Playfair Display";
+}
+.main-back{
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+
+}
+@media screen and (max-width:768px) {
+  .main-back{
+    flex-direction: column;
+    width: 100%;
+  }
+  .image-wheel{
+    width: 100%;
+  }
+}
+.image-wheel{
+  width: 50%;
+  /* display: flex; */
+/* flex-wrap: wrap; */
+}
+.main-text{
+  font-family: "Playfair Display";
+  width: 50%;
+  padding: 15px;
+}
+.main-text p{
+  font-size: 1em;
+}
+
+
+/* .main-back {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.back-2 {
+  position: relative;
+  opacity: 1;
+}
+.back-2 img {
+  max-width: 50%;
+  height: auto;
+}
+.back-Text {
+  position: absolute;
+  top: 8%;
+  color: #b4b5b9;
+  margin-left: 10px;
+  text-shadow: 4px 4px 15px rgb(0, 0, 0);
 
   
+}
+.back-Text h1 {
+  margin-left: 40px;
+  font: 700 2.5vw/1.8 "lato", sans-serif;
+}
+.back-Text button {
+  margin-left: 10%;
+  height: 5rem;
+  width: 18rem;
+  font: 500 1rem/1.8 "Lato", sans-serif;
+  color: white;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+.back-Text button:hover {
+  background-color: #b2b2b2;
+  transition-duration: 0.4s;
+} */
+
+@media (min-width: 40em) {
+  .back-Text {
+    font-size: 2rem;
+  }
+}
+/* Last card CSS */
+.last {
+  display: flex;
+  position: relative;
+  height: 800px;
+  width: 100%;
+  background-color: #211f2a;
+}
+.semi {
+  height: 100%;
+  width: 50%;
+  background-color: #6c777e;
+}
+
+.semi-2 {
+  height: 100%;
+  width: 50%;
+  background-color: #0a0b0b;
+}
+/* Last card CSS */
+/* Card 1 CSS START  */
+.article-card {
+  display: flex;
+  justify-content: end;
+}
+.blog-post {
+  --background-color: #181621;
+
+  display: flex;
+  /* align-items: center; */
+  max-width: 90rem;
+  background-color: #fff;
+  padding: 2.5rem;
+  box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.8rem;
+}
+.blog-post__img {
+  position: relative;
+  min-width: 35rem;
+  max-width: 35rem;
+  height: 30rem;
+  transform: translateX(-8rem);
+}
+.blog-post__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+.blog-post__img::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, #868282 0%, #000000 100%);
+  box-shadow: 0.5rem 0.5rem 3rem 1px rgba(0, 0, 0, 0.05);
+  border-radius: 0.8rem;
+  opacity: 0.5;
+}
+.blog-post__date span {
+  display: block;
+  color: #8e8c8c;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+.blog-post__title {
+  --title-color: #fff;
+
+  font-size: 2.5rem;
+  margin: 1.5rem 0 2rem;
+  text-transform: uppercase;
+  color: #6c777e;
+}
+.blog-post__info p {
+  --title-color: #fff;
+
+  margin-bottom: 3rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+.blog-post__cta {
+  display: inline-block;
+  background-image: linear-gradient(to right, #727a82 0%, #a8aeae 100%);
+  padding: 1.5rem 3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 0.8rem;
+}
+.blog-post__cta:hover {
+  background-image: linear-gradient(to right, #a8aeae 0%, #727a82 100%);
+}
+@media (max-width: 1068px) {
+  .blog-post {
+    max-width: 80rem;
+  }
+  .blog-post__img {
+    min-width: 30rem;
+    max-width: 30rem;
+  }
+}
+@media (max-width: 868px) {
+  .blog-post {
+    max-width: 70rem;
+  }
+}
+@media (max-width: 768px) {
+  .blog-post {
+    padding: 2.5rem;
+    flex-direction: column;
+  }
+  .blog-post__img {
+    min-width: 100%;
+    transform: translate(0, -8rem);
+  }
+}
+/* Card 1 CSS END */
+
+.footer {
+  padding-block: 5rem;
+  background-color: #151823;
+  color: #666873;
+}
+.footer__container {
+  max-width: 116rem;
+  margin: auto;
+  padding: 0 1.5rem;
+}
+
+.footer__top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  row-gap: 2rem;
+}
+.footer__title {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer__list-item {
+  list-style: none;
+}
+.footer__list-link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.25s;
+}
+.footer__list-link:hover {
+  color: #fff;
+}
+
+.company__info {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-right: 5rem;
+}
+.company__logo {
+  color: #fff;
+}
+.company__info ul {
+  flex-direction: row;
+}
+.copyright {
+  margin-top: auto;
+}
+@media screen and (min-width: 40em) {
+  .company__info {
+    grid-column: span 2;
+  }
+}
+
+/* Accordance */
+.title {
+  font-size: clamp(26px, 5vw, 40px);
+  /* color: #313131; */
+  margin-bottom: 30px;
+  color: var(--title-color);
+
+}
+.accordion p{
+  /* color: var(--title-color); */
+  color: #8b8888;
+
+}
+.fon{
+  color: var(--title-color);
+  color: #6b6b6b;
+
+}
+.fon-3{
+  /* color: var(--title-color); */
+  color: #333;
+
+}
+.fon-4{
+  color: #333;
+}
+.accordion-panel {
+  padding: 7px 21px;
+  margin-bottom: 24px;
+  border: 1px solid #777e91;
+  border-radius: 8px;
+  background-color: var(--foreground-color);
+
+}
+.accordion-question .accordion-question .fon {
+  color: #313131;
+  /* --title-color: #fff; */
+}
+.accordion input {
+  display: none;
+  --title-color: #fff;
+}
+
+.accordion label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 15px;
+  padding-block: 7px;
+  /* color: #f4f5f6; */
+  cursor: pointer;
+  transition: color 0.25s;
+  --title-color: #fff;
+}
+
+.accordion label:hover,
+.accordion input:checked + label {
+  color: #797474;
+}
+
+.accordion i {
+  color: #6a6c71;
+}
+
+.accordion .close {
+  display: none;
+}
+
+.accordion input:checked + label .close {
+  display: block;
+}
+
+.accordion input:checked + label .open {
+  display: none;
+}
+
+.accordion-body {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.25s ease-in-out;
+}
+
+.accordion-answer {
+  --title-color: #fff;
+  font-family: "poppins", sans-serif;
+  font-size: 15px;
+  color: #777e91;
+  padding-top: 5px;
+  padding-bottom: 7px;
+  opacity: 0;
+  transform: scale(0);
+  transform-origin: top left;
+  transition: opacity 0.75s, transform 0.15s;
+}
+
+.accordion input:checked ~ .accordion-body {
+  height: max-content;
+}
+
+.accordion input:checked ~ .accordion-body .accordion-answer {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ============= */
+
+/* Video Parallal X */
+
+/* ============= */
+
