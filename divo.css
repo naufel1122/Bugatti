@@ -499,15 +499,22 @@ header.active .button:hover {
 
 }
 .accordion p{
-  color: var(--title-color);
+  /* color: var(--title-color); */
+  color: #8b8888;
+
 }
 .fon{
   color: var(--title-color);
+  color: #6b6b6b;
+
 }
 .fon-3{
-  color: var(--title-color);
+  /* color: var(--title-color); */
   color: #333;
 
+}
+.fon-4{
+  color: #333;
 }
 .accordion-panel {
   padding: 7px 21px;
@@ -517,9 +524,9 @@ header.active .button:hover {
   background-color: var(--foreground-color);
 
 }
-.accordion-question .fon {
+.accordion-question .accordion-question .fon {
   color: #313131;
-  --title-color: #fff;
+  /* --title-color: #fff; */
 }
 .accordion input {
   display: none;
@@ -532,7 +539,7 @@ header.active .button:hover {
   justify-content: space-between;
   column-gap: 15px;
   padding-block: 7px;
-  color: #f4f5f6;
+  /* color: #f4f5f6; */
   cursor: pointer;
   transition: color 0.25s;
   --title-color: #fff;
