@@ -297,6 +297,8 @@ header.active .button:hover {
   width: 50%;
 }
 .img img {
+  --blend-mode: lighten;
+
   width: 100%;
 }
 .tex {
