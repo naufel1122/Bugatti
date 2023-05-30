@@ -172,7 +172,8 @@ header.active .button:hover {
 .parallax {
   margin: 0;
   padding: 0;
-  background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("./images/mistral\ tio.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./images/mistral\ tio.jpeg");
   --blend-mode: normal;
   width: 100%;
   min-height: 100vh;
@@ -213,6 +214,7 @@ header.active .button:hover {
   font-weight: bold;
 }
 .paraContent h1 {
+    font-size: 3em;
   font-weight: bold;
   font-family: "Poppins", sans-serif;
 }
@@ -241,7 +243,7 @@ header.active .button:hover {
   font-weight: bold;
   font-family: "Poppins", sans-serif;
   color: #cac4c459;
-  font-size: 6vw;
+  font-size:5vw;
 }
 .parallas button {
   border-radius: 60px;
@@ -260,13 +262,7 @@ header.active .button:hover {
   color: rgb(10, 10, 10);
   transition-duration: 0.8s;
 }
-/* .parallas p {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  color: #e9e1e1;
-  font-size: 1.5rem;
-  font-weight: 200;
-} */
+
 /* PARALLAL S ENDS HERE */
 
 .background p {
@@ -275,41 +271,63 @@ header.active .button:hover {
   font-weight: 775;
   font-family: "Playfair Display";
 }
-.main{
+/* ======================== */
+.official h1 {
+    text-align: center;
+    font-size:2.6em;
+    font-weight: bold;
+}
+.official p{
+    text-align: center;
+    font-weight: bold;
+}
+.video video {
+  display: block;
+  margin: 1em auto;
+  width: 100%;
+  height: calc(0.5625 * 100vw);
+}
+
+/* ===================== */
+.main {
   display: flex;
   flex-wrap: wrap;
 }
-.img{
+.img {
   width: 50%;
 }
-.img img{
+.img img {
   width: 100%;
 }
-.tex{
+.tex {
   width: 50%;
+  border: 1px solid black;
 }
-.tex h1{
-  margin-left: 20px;
+.tex h1 {
+    margin-bottom: 80px;
+  margin-left: 50px;
   font-family: "Playfair Display";
   font-size: 1.5em;
   font-weight: bolder;
   text-align: center;
 }
-.tex p{
-  margin-left: 20px;
+.tex p {
+  margin-left:40px;
+  margin-right:40px;
   font-size: 1em;
   text-align: center;
   flex-wrap: wrap;
 }
-@media screen and (max-width:768px) {
-  .main{
+@media screen and (max-width: 768px) {
+  .main {
     flex-direction: column;
     justify-content: center;
   }
-  .img{
+  .img {
     width: 100%;
   }
-  .tex{
+
+  .tex {
     width: 100%;
   }
 }
@@ -337,7 +355,6 @@ header.active .button:hover {
 .article-card {
   display: flex;
   justify-content: end;
-
 }
 .blog-post {
   --background-color: #181621;
@@ -386,9 +403,9 @@ header.active .button:hover {
   text-transform: uppercase;
   color: #6c777e;
 }
-.blog-post__info{
-    --background-color: #181621;
-    --foreground-color: #211f2a;   
+.blog-post__info {
+  --background-color: #181621;
+  --foreground-color: #211f2a;
 }
 .blog-post__info p {
   --title-color: #fff;
@@ -501,24 +518,20 @@ header.active .button:hover {
   /* color: #313131; */
   margin-bottom: 30px;
   color: var(--title-color);
-
 }
-.accordion p{
+.accordion p {
   /* color: var(--title-color); */
   color: #8b8888;
-
 }
-.fon{
+.fon {
   color: var(--title-color);
   color: #6b6b6b;
-
 }
-.fon-3{
+.fon-3 {
   /* color: var(--title-color); */
   color: #333;
-
 }
-.fon-4{
+.fon-4 {
   color: #333;
 }
 .accordion-panel {
@@ -527,7 +540,6 @@ header.active .button:hover {
   border: 1px solid #777e91;
   border-radius: 8px;
   background-color: var(--foreground-color);
-
 }
 .accordion-question .accordion-question .fon {
   color: #313131;
@@ -604,4 +616,3 @@ header.active .button:hover {
 /* Video Parallal X */
 
 /* ============= */
-
