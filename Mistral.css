@@ -124,6 +124,9 @@ a {
   font-size: 2.7rem;
   font-weight: 900;
 }
+.logo:hover{
+    color: white;
+}
 .nav-list {
   list-style: none;
   display: flex;
