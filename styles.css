@@ -132,44 +132,52 @@ header button {
 #checkbox {
 	display: none;
 }
+a {
+  text-decoration: none;
+  color: #fff;
+}
+#checkbox {
+  display: none;
+}
 .switch {
   border: 3px solid var(--body-color);
-	position: relative;
-	display: flex;
+  position: relative;
+  display: flex;
   justify-content: center;
   width: 60px;
-	height: 31px;
-	border: 1.2px solid #0a0a0a;
-	border-radius: 30px;
-	cursor: pointer;
+  height: 25px;
+  border: 1.2px solid #cacaca;
+  border-radius: 30px;
+  cursor: pointer;
   background-color: transparent;
-  color: white;
+  color: rgb(198, 198, 198);
   color: var(--title-color);
 }
-
 .switch > * {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .switch__ball {
-	left: 1px;
-	z-index: 10;
-	display: inline-block;
-	width: 25px;
-	height: 25px;
-	background-color: #000000;
-	border-radius: 50%;
-	transition: transform 0.5s cubic-bezier(0.52, -0.4, 0.27, 1.55);
+  left: 1px;
+  z-index: 10;
+  display: inline-block;
+  width: 2.2rem;
+  height: 2.2rem;
+  background-color: rgb(198, 198, 198);
+  border-radius: 50%;
+  transition: transform 0.5s cubic-bezier(0.52, -0.4, 0.27, 1.55);
+  color: var(--title-color);
 }
 .switch__sun {
-	left: 5px;
+  left: 5px;
+  font: 5px;
 }
 .switch__moon {
-	right: 5px;
+  right: 5px;
 }
 #checkbox:checked + .switch__ball {
-	transform: translate(29px, -50%);
+  transform: translate(29px, -50%);
 }
 /* HEADER WORK START HERE */
 
