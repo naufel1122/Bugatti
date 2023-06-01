@@ -316,6 +316,30 @@ header.active .button:hover {
     width: 100%;
   }
 }
+
+
+
+/* ======================== */
+.official{
+  margin-top: 100px;
+}
+.official h1 {
+  text-align: center;
+  font-size:2.3em;
+  font-weight: bold;
+}
+.official p{
+  text-align: center;
+  font-weight: bold;
+}
+.video video {
+display: block;
+margin: 1em auto;
+width: 100%;
+height: calc(0.5625 * 100vw);
+}
+
+/* =============== */
 /* Last card CSS */
 .last {
   display: flex;
