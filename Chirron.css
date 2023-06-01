@@ -93,7 +93,7 @@ a {
 .register {
   max-width: 120rem;
   margin-inline: auto;
-  padding-inline: 1.5rem;
+  padding-inline: 2.5rem;
 }
 .navbar {
   height: 7.5rem;
@@ -123,6 +123,9 @@ a {
 .logo {
   font-size: 2.7rem;
   font-weight: 900;
+}
+.logo:hover{
+  color:white;
 }
 .nav-list {
   list-style: none;

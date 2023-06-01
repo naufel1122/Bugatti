@@ -25,7 +25,7 @@
 <body>
 	<header class="primary-header">
 		<nav class="register container  navbar navbar-expand-lg  ">
-			<a class="navbar-brand logo" href="#">BUGATTI.</a>
+			<a class="navbar-brand logo" href="./index.html">BUGATTI.</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 				aria-label="Toggle navigation">
@@ -46,10 +46,10 @@
 						<a href="#" class="nav-link">Ownership</a>
 					</li>
 					<li>
-						<a href="#" class="nav-link">Life Style</a>
+						<a href="./AboutUs.html" class="nav-link">About</a>
 					</li>
 					<li>
-						<a href="#" class="nav-link">Company</a>
+						<a href="#" class="nav-link">Contact</a>
 					</li>
 				</ul><br>
 				<label role="button" for="checkbox" class="switch">
@@ -415,62 +415,8 @@ The Bugatti Chiron is painted with a special type of paint called polyurethane p
 		</div>
 	</footer>
 
-	<script>
-		const bodyEl = document.body
-		const switchEl = document.querySelector('.switch__ball')
-		const activeTheme = localStorage.getItem('theme')
 
-		if (activeTheme) {
-			bodyEl.classList.add('dark')
-		}
-
-		switchEl.addEventListener('click', function () {
-			bodyEl.classList.toggle('dark')
-			if (bodyEl.classList.contains('dark')) {
-				localStorage.setItem('theme', 'dark')
-			} else {
-				localStorage.removeItem('theme')
-			}
-		})
-	</script>
-	<script>
-		const isScrolling = () => {
-			const headerEl = document.querySelector('.primary-header')
-			let windowPosition = window.scrollY > 250
-			headerEl.classList.toggle('active', windowPosition)
-		}
-		window.addEventListener('scroll', isScrolling);
-	</script>
-
-
-	<!-- 
-	<script>
-
-		// Video Javascript
-		let options = {
-			root: null,
-			rootMargin: '0px',
-			threshold: 1.0,
-		};
-		let callback = (entries, observer) => {
-			entries.forEach(element => {
-				if (entry.target.id == "myVideo") {
-					if (entry.IntersectionObserver) {
-						entry.target.play();
-					}
-					else {
-						entry.target.pause();
-					}
-				}
-			});
-		}
-		let observer = new IntersectionObserver(callback, options);
-		observer.observe(document.querySelector("#myVideo"));
-// Video Javascript
-	</script> -->
-
-
-
+	<script src="./script.js"></script>
 	<!-- Bootstrap script -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
