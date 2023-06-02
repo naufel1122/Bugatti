@@ -89,19 +89,8 @@
       opacity: 0;
   }
 }
-
-
-
 /* ======================= */
-
-
-
-
 /* ======================= */
-
-
-
-
 * {
   margin: 0;
   padding: 0;
@@ -230,6 +219,37 @@ header button {
 }
 
 /* NAVBAR WORK ENDS HERE */
+/* ======== */
+.dropdown-menu{
+  height:350px;
+}
+.dropdown-menu a{
+  color: #000000;
+
+}
+.dropdown{
+  color: #fff;
+}
+.dropdown:hover{
+  color: #fff;
+}
+.dropdown ul li a{
+  text-decoration: none;
+  color: #151515;
+  font-weight: 600;
+}
+.dropdown ul li a:hover{
+  color:#fff;
+}
+.dropdown-item{
+  padding: 20px;
+  font-size: 1.3em;
+}
+.dropdown-item:hover{
+  background-color: #262234;
+}
+
+/* ======== */
 #checkbox {
 	display: none;
 }

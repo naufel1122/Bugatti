@@ -312,7 +312,37 @@ header.active .button:hover {
 }
 
 /* NAVIGATION CSS ENDS HERE */
+/* ======== */
+.dropdown-menu{
+  height:350px;
+}
+.dropdown-menu a{
+  color: #000000;
 
+}
+.dropdown{
+  color: #fff;
+}
+.dropdown:hover{
+  color: #fff;
+}
+.dropdown ul li a{
+  text-decoration: none;
+  color: #151515;
+  font-weight: 600;
+}
+.dropdown-item{
+  padding: 20px;
+  font-size: 1.3em;
+}
+.dropdown ul li a:hover{
+  color:#fff;
+}
+.dropdown-item:hover{
+  background-color:  #262234;
+}
+
+/* ======== */
 /* NAVBAR WORK ENDS HERE */
 /* ===================   */
 .main {
