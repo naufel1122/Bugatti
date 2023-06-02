@@ -26,3 +26,6 @@ const isScrolling = () => {
 window.addEventListener("scroll", isScrolling);
 // NAVIGATION SCROLLING JAVASCRIPT START
 
+setTimeout(function(){
+  $('.loader_bg').fadeToggle();
+},1000);
