@@ -170,6 +170,9 @@ a {
   font-weight: bold;
   text-decoration: none;
 }
+.navbar ul li a:hover{
+  color: #fff;
+}
 .navbar .button {
   color: #151515;
   font-size: 16px;
@@ -236,31 +239,27 @@ header.active .button:hover {
 /* NAVIGATION CSS ENDS HERE */
 /* ======== */
 .dropdown-menu{
-  height:350px;
-}
-.dropdown-menu a{
-  color: #000000;
+  height:310px;
 
-}
-.dropdown{
-  color: #fff;
 }
 .dropdown:hover{
   color: #fff;
 }
 .dropdown ul li a{
   text-decoration: none;
-  color: #151515;
+  color: #1a1a1a;
   font-weight: 600;
 }
 .dropdown-item{
-  padding: 50px;
+  /* padding: 10px; */
   font-size: 1.3em;
+  line-height: 50px;
+}
+.dropdown-item:hover{
+  line-height: 50px;
 }
 .dropdown ul li a:hover{
   color:#fff;
-}
-.dropdown-item:hover{
   background-color:  #262234;
 }
 
@@ -390,7 +389,7 @@ form textarea{
     row-gap: 2rem;
   }
   .footer__title {
-    font-size:3rem;
+    font-size:2rem;
     color: #fff;
     font-weight: 500;
     margin-bottom: 2rem;
