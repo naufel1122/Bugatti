@@ -146,11 +146,11 @@ a {
   justify-content: center;
   width: 60px;
   height: 25px;
-  border: 1.2px solid #cacaca;
+  border: 1.2px solid #6a6767;
   border-radius: 30px;
   cursor: pointer;
   background-color: transparent;
-  color: rgb(198, 198, 198);
+  color:#6a6767;
   color: var(--title-color);
 }
 .switch > * {
@@ -164,7 +164,7 @@ a {
   display: inline-block;
   width: 2.2rem;
   height: 2.2rem;
-  background-color: rgb(198, 198, 198);
+  background-color:#6a6767;
   border-radius: 50%;
   transition: transform 0.5s cubic-bezier(0.52, -0.4, 0.27, 1.55);
   color: var(--title-color);
