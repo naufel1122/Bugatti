@@ -248,12 +248,13 @@ header.active .button:hover {
 .dropdown ul li a{
   text-decoration: none;
   color: #1a1a1a;
-  font-weight: 600;
 }
 .dropdown-item{
   /* padding: 10px; */
-  font-size: 1.3em;
+  font-size: 1.5em;
   line-height: 50px;
+  font-weight: bolder;
+
 }
 .dropdown-item:hover{
   line-height: 50px;
