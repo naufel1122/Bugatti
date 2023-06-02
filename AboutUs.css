@@ -331,7 +331,11 @@ header.active .button:hover {
   font-family: "Playfair Display";
 
 }
-
+@media (max-width:768px) {
+  .cities{
+    margin-bottom:20px ;
+  }
+}
 /* ======== */
 #maps {
   text-align: center;
