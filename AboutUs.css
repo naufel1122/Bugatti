@@ -338,37 +338,98 @@ header.active .button:hover {
 .map {
   height: 500px;
   text-align: center;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
 
 }
 
 /* =============== */
-.main-div{
+.main {
+  height: 700px;
   width: 100%;
-  height: 100%;
   display: flex;
+  /* flex-wrap: wrap; */
   flex-direction: row;
-  flex-wrap: wrap;
 }
-.img{
+
+.img {
   width: 50%;
 }
-.img img{
-  width: 100%;
-  height: 100%;
-}
-.tet{
-  background:rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(90px);
+
+.tex {
   width: 50%;
+  height: 76%;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(70px);
+}
+.tex h2{
   text-align: center;
+  font-size: 2em;
+  font-weight: 500;
+  margin-top: 20px;
 }
-@media (min-width:768px) {
-  .main-div{
+.tex p{
+  text-align:center;
+  font-size: 1em;
+  margin-top: 25px;
+}
+@media (max-width:1560px) {
+  .main {
     flex-direction: column;
+    margin-top: 300px;
+  }
+
+  .img {
+    width: 100%;
+  }
+
+  .tex {
+    width: 100%;
+}
+.tex h2{
+  text-align: center;
+  font-size: 1em;
+  font-weight: 500;
+  margin-top:20px;
+}
+.tex p{
+  text-align:center;
+  font-size: .6em;
+  margin-top: 40px;
+}
+}
+
+@media (max-width:768px) {
+  .main {
+    flex-direction: column;
+    margin-top: 300px;
+  }
+
+  .img {
+    width: 100%;
+  }
+
+  .tex {
+    width: 100%;
+  }
+  .tex h2{
+    text-align: center;
+    font-size: 1em;
+    font-weight: 500;
+  }
+  .tex p{
+    text-align:center;
+    font-size: .6em;
   }
 }
+
+
+
+
+
+
+
 /* ============== */
 .about-us {
   text-align: center;
