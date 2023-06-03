@@ -202,13 +202,14 @@ header button {
 }
 .dropdown ul li a:hover{
   color:#fff;
+  background-color: #262234 ;
 }
 .dropdown-item{
   padding: 20px;
 }
-.dropdown-item:hover{
+/* .dropdown-item:hover{
   background-color: #262234;
-}
+} */
 
 /* ======== */
 #checkbox {
