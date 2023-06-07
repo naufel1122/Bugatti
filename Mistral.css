@@ -175,7 +175,7 @@ a {
   border-bottom: 2px solid rgba(255, 255, 255, 0.05);
   transition: height 0.25s;
 }
-@media (max-width:1590px) {
+@media (max-width:990px) {
   #navbarSupportedContent{
     margin-top: 30px;
     width: 100%;
@@ -451,7 +451,6 @@ header.active .button:hover {
 
 .img img {
   --blend-mode: lighten;
-
   width: 100%;
 }
 
@@ -470,14 +469,14 @@ header.active .button:hover {
 }
 
 .tex p {
+  margin-top: 0;
   margin-left: 40px;
   margin-right: 40px;
   font-size: 1em;
   text-align: center;
-  flex-wrap: wrap;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1480px) {
   .main {
     flex-direction: column;
     justify-content: center;
@@ -491,7 +490,11 @@ header.active .button:hover {
     width: 100%;
   }
 }
-
+@media  (min-width: 768px){
+.tex p{
+  overflow: hidden;
+}
+}
 /* Last card CSS */
 .last {
   display: flex;

@@ -165,7 +165,7 @@ a {
   border-bottom: 2px solid rgba(255, 255, 255, 0.05);
   transition: height 0.25s;
 }
-@media (max-width:1590px) {
+@media (max-width:990px) {
   #navbarSupportedContent{
     margin-top: 30px;
     width: 100%;
