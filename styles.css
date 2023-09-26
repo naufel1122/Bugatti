@@ -164,13 +164,13 @@ a {
   color: #fbf8f8;
 }
 .navbar-toggler{
-  background-color:#ffffffa3;
+  background-color:#fffffffe;
   height: 3rem;
   width:4rem;
 }
 
 header.active {
-  background-color: #ffffffa3;
+  background-color: #fffffffe;
   box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
 }
 header.active .navbar {
@@ -178,9 +178,9 @@ header.active .navbar {
 }
 header.active .logo,
 header.active .nav-link {
-  color: #6e6e6e;
+  color: #2c2c2c;
   transition: color 0.25s;
-  font-weight: bolder;
+  font-weight: 900;
 }
 header.active .nav-link:hover {
   color: #808080;
@@ -245,7 +245,7 @@ a {
   position: relative;
   display: flex;
   justify-content: center;
-  width: 60px;
+  width: 5.50rem;
   height:25px;
   border: 1.2px solid #6a6767;
   border-radius: 30px;
@@ -263,19 +263,20 @@ a {
   left: 1px;
   z-index: 10;
   display: inline-block;
-  width: 2rem;
-  height: 2rem;
+  width: 2.2rem;
+  height: 2.2rem;
   background-color:#6a6767;
   border-radius: 50%;
   transition: transform 0.5s cubic-bezier(0.52, -0.4, 0.27, 1.55);
   color: var(--title-color);
 }
 .switch__sun {
-  left: 5px;
-  font: 5px;
+  left: 7px;
+  font-size: 18px;
 }
 .switch__moon {
-  right: 5px;
+  right:6px;
+  font-size: 18px;
 }
 #checkbox:checked + .switch__ball {
   transform: translate(29px, -50%);
