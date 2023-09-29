@@ -116,12 +116,12 @@ a {
   justify-content: center;
   width: 5.50rem;
   height: 25px;
-  border: 1.2px solid #6a6767;
+  border: 1.2px solid #fff;
   border-radius: 30px;
   cursor: pointer;
   background-color: transparent;
   color: white;
-  color: var(--title-color);
+  /* color: var(--title-color); */
 }
 
 .switch>* {
@@ -136,20 +136,19 @@ a {
   display: inline-block;
   width: 2.2rem;
   height: 2rem;
-  background-color: #6a6767;
+  background-color: #fff;
   border-radius: 50%;
   transition: transform 0.5s cubic-bezier(0.52, -0.4, 0.27, 1.55);
-  color: var(--title-color);
+  /* color: var(--title-color); */
 }
 
 .switch__sun {
-  font-size: 18px;
+  font-size: 16px;
   left: 5px;
 }
 
 .switch__moon {
-  font-size: 18px;
-
+  font-size: 16px;
   right: 5px;
 }
 
@@ -258,6 +257,14 @@ a {
 header.active {
   background-color: #fffffffe;
   box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+}
+header.active .switch{
+  color: #2c2c2c;
+  border: 1.2px solid #2c2c2c; 
+}
+
+header.active .switch .switch__ball{
+  background-color: #2c2c2c;
 }
 
 header.active .navbar {
